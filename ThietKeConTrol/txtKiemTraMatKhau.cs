@@ -5,9 +5,10 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 namespace ThietKeConTrol
 {
-    public class txtKiemTraMatKhau:TextBox
+    public class txtKiemTraMatKhau:TextEdit
     {
         public txtKiemTraMatKhau()
         {
@@ -19,6 +20,7 @@ namespace ThietKeConTrol
            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
+                
             }
         }
     }

@@ -22,5 +22,10 @@ namespace QL_CuaHangQuanAo
         {
 
         }
+
+        private void Btn_DN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

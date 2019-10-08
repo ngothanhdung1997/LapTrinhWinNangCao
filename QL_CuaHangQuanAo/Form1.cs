@@ -8,11 +8,15 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QL_CuaHangQuanAo.model;
 
 namespace QL_CuaHangQuanAo
 {
     public partial class QL_CHTT : DevExpress.XtraBars.FluentDesignSystem.FluentDesignForm
     {
+        public static string user;
+        public static string idlogin;
+
         public QL_CHTT()
         {
             InitializeComponent();

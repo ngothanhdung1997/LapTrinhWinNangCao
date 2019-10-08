@@ -19,7 +19,7 @@ namespace QL_CuaHangQuanAo
             Application.SetCompatibleTextRenderingDefault(false);
 
             BonusSkins.Register();
-            Application.Run(new QL_CHTT());
+            Application.Run(new QL_CuaHangQuanAo());
         }
     }
 }
