@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QL_CuaHangQuanAo));
+            DevExpress.XtraBars.Ribbon.GalleryItemGroup galleryItemGroup1 = new DevExpress.XtraBars.Ribbon.GalleryItemGroup();
             this.ribbon = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.imgCL1 = new DevExpress.Utils.ImageCollection(this.components);
             this.btn_Login = new DevExpress.XtraBars.BarButtonItem();
@@ -39,9 +40,19 @@
             this.btn_SaoLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btn_PhucHoi = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.btn_NhapHang = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_HangHoa = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_BanHang = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_LoaiHang = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_DoanhThu = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_BaoCao = new DevExpress.XtraBars.BarButtonItem();
+            this.ribbonGalleryBarItem1 = new DevExpress.XtraBars.RibbonGalleryBarItem();
+            this.btn_DangKy = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup11 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -52,20 +63,6 @@
             this.ribbonPageGroup8 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
-            this.xtraTab_HienThi = new DevExpress.XtraTab.XtraTabControl();
-            this.accordionControl2 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator5 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator1 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator2 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator3 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlSeparator4 = new DevExpress.XtraBars.Navigation.AccordionControlSeparator();
-            this.accordionControlElement8 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormContainer1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.panelControl3 = new DevExpress.XtraEditors.PanelControl();
             this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
@@ -168,10 +165,9 @@
             this.pictureEdit14 = new DevExpress.XtraEditors.PictureEdit();
             this.labelControl69 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl70 = new DevExpress.XtraEditors.LabelControl();
+            this.skinPaletteRibbonGalleryBarItem1 = new DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCL1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTab_HienThi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accordionControl2)).BeginInit();
             this.fluentDesignFormContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).BeginInit();
             this.panelControl3.SuspendLayout();
@@ -225,14 +221,24 @@
             this.btn_PhanQuyen,
             this.btn_SaoLuu,
             this.btn_PhucHoi,
-            this.skinRibbonGalleryBarItem1});
+            this.skinRibbonGalleryBarItem1,
+            this.btn_NhapHang,
+            this.btn_HangHoa,
+            this.btn_BanHang,
+            this.btn_LoaiHang,
+            this.btn_DoanhThu,
+            this.btn_BaoCao,
+            this.ribbonGalleryBarItem1,
+            this.btn_DangKy,
+            this.skinPaletteRibbonGalleryBarItem1});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.MaxItemId = 232;
+            this.ribbon.MaxItemId = 241;
             this.ribbon.Name = "ribbon";
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
+            this.ribbon.QuickToolbarItemLinks.Add(this.btn_DangKy);
             this.ribbon.ShowItemCaptionsInPageHeader = true;
             this.ribbon.Size = new System.Drawing.Size(1022, 143);
             this.ribbon.StatusBar = this.ribbonStatusBar;
@@ -247,6 +253,12 @@
             this.imgCL1.Images.SetKeyName(3, "phanquyen.PNG");
             this.imgCL1.Images.SetKeyName(4, "phuchoidulieu.PNG");
             this.imgCL1.Images.SetKeyName(5, "saoluu.PNG");
+            this.imgCL1.Images.SetKeyName(6, "HangHoa.PNG");
+            this.imgCL1.Images.SetKeyName(7, "BanHang.PNG");
+            this.imgCL1.Images.SetKeyName(8, "LoaiHang.PNG");
+            this.imgCL1.Images.SetKeyName(9, "nhaphang.png");
+            this.imgCL1.Images.SetKeyName(10, "baocao.PNG");
+            this.imgCL1.Images.SetKeyName(11, "doanhthu.PNG");
             // 
             // btn_Login
             // 
@@ -264,6 +276,7 @@
             this.btn_Changepass.Id = 226;
             this.btn_Changepass.ImageOptions.ImageIndex = 1;
             this.btn_Changepass.Name = "btn_Changepass";
+            this.btn_Changepass.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.Btn_Changepass_ItemClick);
             // 
             // btn_Logout
             // 
@@ -302,14 +315,88 @@
             this.skinRibbonGalleryBarItem1.Id = 231;
             this.skinRibbonGalleryBarItem1.Name = "skinRibbonGalleryBarItem1";
             // 
+            // btn_NhapHang
+            // 
+            this.btn_NhapHang.Caption = "Nhập Hàng";
+            this.btn_NhapHang.Id = 232;
+            this.btn_NhapHang.ImageOptions.ImageIndex = 9;
+            this.btn_NhapHang.Name = "btn_NhapHang";
+            this.btn_NhapHang.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // btn_HangHoa
+            // 
+            this.btn_HangHoa.Caption = "Hàng Hóa";
+            this.btn_HangHoa.Id = 233;
+            this.btn_HangHoa.ImageOptions.ImageIndex = 7;
+            this.btn_HangHoa.Name = "btn_HangHoa";
+            this.btn_HangHoa.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // btn_BanHang
+            // 
+            this.btn_BanHang.Caption = "Bán Hàng";
+            this.btn_BanHang.Id = 234;
+            this.btn_BanHang.ImageOptions.ImageIndex = 8;
+            this.btn_BanHang.Name = "btn_BanHang";
+            this.btn_BanHang.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // btn_LoaiHang
+            // 
+            this.btn_LoaiHang.Caption = "Loại Hàng";
+            this.btn_LoaiHang.Id = 235;
+            this.btn_LoaiHang.ImageOptions.ImageIndex = 6;
+            this.btn_LoaiHang.Name = "btn_LoaiHang";
+            this.btn_LoaiHang.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // btn_DoanhThu
+            // 
+            this.btn_DoanhThu.Caption = "Doanh Thu";
+            this.btn_DoanhThu.Id = 236;
+            this.btn_DoanhThu.ImageOptions.ImageIndex = 11;
+            this.btn_DoanhThu.Name = "btn_DoanhThu";
+            this.btn_DoanhThu.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // btn_BaoCao
+            // 
+            this.btn_BaoCao.Caption = "Báo Cáo";
+            this.btn_BaoCao.Id = 237;
+            this.btn_BaoCao.ImageOptions.ImageIndex = 10;
+            this.btn_BaoCao.Name = "btn_BaoCao";
+            this.btn_BaoCao.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            // 
+            // ribbonGalleryBarItem1
+            // 
+            this.ribbonGalleryBarItem1.Caption = "InplaceGallery1";
+            // 
+            // 
+            // 
+            galleryItemGroup1.Caption = "Group3";
+            this.ribbonGalleryBarItem1.Gallery.Groups.AddRange(new DevExpress.XtraBars.Ribbon.GalleryItemGroup[] {
+            galleryItemGroup1});
+            this.ribbonGalleryBarItem1.Id = 238;
+            this.ribbonGalleryBarItem1.Name = "ribbonGalleryBarItem1";
+            // 
+            // btn_DangKy
+            // 
+            this.btn_DangKy.Caption = "Đăng Ký";
+            this.btn_DangKy.Id = 239;
+            this.btn_DangKy.Name = "btn_DangKy";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
+            this.ribbonPageGroup10,
+            this.ribbonPageGroup11,
             this.ribbonPageGroup3});
             this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "Hệ Thống";
+            this.ribbonPage1.Text = "Nghiệp Vụ";
             // 
             // ribbonPageGroup1
             // 
@@ -318,7 +405,7 @@
             this.ribbonPageGroup1.ItemLinks.Add(this.btn_Logout);
             this.ribbonPageGroup1.ItemLinks.Add(this.btn_PhanQuyen);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Bảo Mật";
+            this.ribbonPageGroup1.Text = "Hệ Thống";
             // 
             // ribbonPageGroup2
             // 
@@ -326,6 +413,22 @@
             this.ribbonPageGroup2.ItemLinks.Add(this.btn_PhucHoi);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Dữ Liệu";
+            // 
+            // ribbonPageGroup10
+            // 
+            this.ribbonPageGroup10.ItemLinks.Add(this.btn_NhapHang);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btn_HangHoa);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btn_BanHang);
+            this.ribbonPageGroup10.ItemLinks.Add(this.btn_LoaiHang);
+            this.ribbonPageGroup10.Name = "ribbonPageGroup10";
+            this.ribbonPageGroup10.Text = "Nghiệp Vụ";
+            // 
+            // ribbonPageGroup11
+            // 
+            this.ribbonPageGroup11.ItemLinks.Add(this.btn_DoanhThu);
+            this.ribbonPageGroup11.ItemLinks.Add(this.btn_BaoCao);
+            this.ribbonPageGroup11.Name = "ribbonPageGroup11";
+            this.ribbonPageGroup11.Text = "Thống Kê";
             // 
             // ribbonPageGroup3
             // 
@@ -340,7 +443,7 @@
             this.ribbonPageGroup5,
             this.ribbonPageGroup6});
             this.ribbonPage2.Name = "ribbonPage2";
-            this.ribbonPage2.Text = "Quản Lý";
+            this.ribbonPage2.Text = "Tiện ích";
             // 
             // ribbonPageGroup4
             // 
@@ -387,113 +490,6 @@
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1022, 31);
-            // 
-            // xtraTab_HienThi
-            // 
-            this.xtraTab_HienThi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTab_HienThi.Location = new System.Drawing.Point(0, 143);
-            this.xtraTab_HienThi.Name = "xtraTab_HienThi";
-            this.xtraTab_HienThi.Size = new System.Drawing.Size(1022, 386);
-            this.xtraTab_HienThi.TabIndex = 2;
-            // 
-            // accordionControl2
-            // 
-            this.accordionControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.accordionControl2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement2});
-            this.accordionControl2.Location = new System.Drawing.Point(0, 143);
-            this.accordionControl2.Margin = new System.Windows.Forms.Padding(2);
-            this.accordionControl2.Name = "accordionControl2";
-            this.accordionControl2.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl2.Size = new System.Drawing.Size(173, 386);
-            this.accordionControl2.TabIndex = 4;
-            this.accordionControl2.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
-            // 
-            // accordionControlElement2
-            // 
-            this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement7,
-            this.accordionControlSeparator5,
-            this.accordionControlElement3,
-            this.accordionControlSeparator1,
-            this.accordionControlElement4,
-            this.accordionControlSeparator2,
-            this.accordionControlElement5,
-            this.accordionControlSeparator3,
-            this.accordionControlElement6,
-            this.accordionControlSeparator4,
-            this.accordionControlElement8});
-            this.accordionControlElement2.Expanded = true;
-            this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
-            this.accordionControlElement2.Name = "accordionControlElement2";
-            this.accordionControlElement2.Text = "Quản Lý Hệ Thống";
-            // 
-            // accordionControlElement7
-            // 
-            this.accordionControlElement7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement7.ImageOptions.SvgImage")));
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "Tổng Quan";
-            // 
-            // accordionControlSeparator5
-            // 
-            this.accordionControlSeparator5.Name = "accordionControlSeparator5";
-            // 
-            // accordionControlElement3
-            // 
-            this.accordionControlElement3.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
-            this.accordionControlElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement3.ImageOptions.SvgImage")));
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "Hàng Hóa";
-            // 
-            // accordionControlSeparator1
-            // 
-            this.accordionControlSeparator1.Name = "accordionControlSeparator1";
-            // 
-            // accordionControlElement4
-            // 
-            this.accordionControlElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement4.ImageOptions.SvgImage")));
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "Nhập Kho";
-            // 
-            // accordionControlSeparator2
-            // 
-            this.accordionControlSeparator2.Name = "accordionControlSeparator2";
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "Xuất Kho";
-            // 
-            // accordionControlSeparator3
-            // 
-            this.accordionControlSeparator3.Name = "accordionControlSeparator3";
-            // 
-            // accordionControlElement6
-            // 
-            this.accordionControlElement6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement6.ImageOptions.SvgImage")));
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "Thu Chi";
-            // 
-            // accordionControlSeparator4
-            // 
-            this.accordionControlSeparator4.Name = "accordionControlSeparator4";
-            // 
-            // accordionControlElement8
-            // 
-            this.accordionControlElement8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement8.ImageOptions.SvgImage")));
-            this.accordionControlElement8.Name = "accordionControlElement8";
-            this.accordionControlElement8.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement8.Text = "Báo Cáo";
             // 
             // fluentDesignFormContainer1
             // 
@@ -877,7 +873,7 @@
             this.panel3.Controls.Add(this.pictureEdit4);
             this.panel3.Controls.Add(this.labelControl6);
             this.panel3.Controls.Add(this.labelControl7);
-            this.panel3.Location = new System.Drawing.Point(710, 71);
+            this.panel3.Location = new System.Drawing.Point(749, 69);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(227, 82);
             this.panel3.TabIndex = 4;
@@ -922,7 +918,7 @@
             this.panel2.Controls.Add(this.pictureEdit3);
             this.panel2.Controls.Add(this.labelControl4);
             this.panel2.Controls.Add(this.labelControl5);
-            this.panel2.Location = new System.Drawing.Point(496, 71);
+            this.panel2.Location = new System.Drawing.Point(535, 69);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(195, 82);
             this.panel2.TabIndex = 3;
@@ -967,7 +963,7 @@
             this.panel1.Controls.Add(this.pictureEdit2);
             this.panel1.Controls.Add(this.labelControl2);
             this.panel1.Controls.Add(this.labelControl3);
-            this.panel1.Location = new System.Drawing.Point(19, 71);
+            this.panel1.Location = new System.Drawing.Point(58, 69);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(222, 82);
             this.panel1.TabIndex = 2;
@@ -1013,7 +1009,7 @@
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftBottom;
             this.labelControl1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("labelControl1.ImageOptions.SvgImage")));
-            this.labelControl1.Location = new System.Drawing.Point(6, 29);
+            this.labelControl1.Location = new System.Drawing.Point(3, 14);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(208, 36);
             this.labelControl1.TabIndex = 1;
@@ -1026,7 +1022,7 @@
             this.panel.Controls.Add(this.pictureEdit1);
             this.panel.Controls.Add(this.lbl_SLSP);
             this.panel.Controls.Add(this.lbl_SoDonHang);
-            this.panel.Location = new System.Drawing.Point(265, 71);
+            this.panel.Location = new System.Drawing.Point(304, 69);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(202, 82);
             this.panel.TabIndex = 0;
@@ -1629,13 +1625,17 @@
             this.labelControl70.TabIndex = 0;
             this.labelControl70.Text = "Số Đơn Hàng: ";
             // 
+            // skinPaletteRibbonGalleryBarItem1
+            // 
+            this.skinPaletteRibbonGalleryBarItem1.Caption = "skinPaletteRibbonGalleryBarItem1";
+            this.skinPaletteRibbonGalleryBarItem1.Id = 240;
+            this.skinPaletteRibbonGalleryBarItem1.Name = "skinPaletteRibbonGalleryBarItem1";
+            // 
             // QL_CuaHangQuanAo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 560);
-            this.Controls.Add(this.accordionControl2);
-            this.Controls.Add(this.xtraTab_HienThi);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.ribbon);
@@ -1648,8 +1648,6 @@
             this.Load += new System.EventHandler(this.QL_CuaHangQuanAo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCL1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTab_HienThi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accordionControl2)).EndInit();
             this.fluentDesignFormContainer1.ResumeLayout(false);
             this.fluentDesignFormContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl3)).EndInit();
@@ -1719,7 +1717,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
-        private DevExpress.XtraTab.XtraTabControl xtraTab_HienThi;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup8;
@@ -1732,19 +1729,6 @@
         private DevExpress.XtraBars.BarButtonItem btn_PhucHoi;
         private DevExpress.XtraBars.SkinRibbonGalleryBarItem skinRibbonGalleryBarItem1;
         private DevExpress.Utils.ImageCollection imgCL1;
-        private DevExpress.XtraBars.Navigation.AccordionControl accordionControl2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
-        private DevExpress.XtraBars.Navigation.AccordionControlSeparator accordionControlSeparator4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement8;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
         private DevExpress.XtraEditors.PanelControl panelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl32;
@@ -1847,5 +1831,16 @@
         private DevExpress.XtraEditors.PictureEdit pictureEdit13;
         private DevExpress.XtraEditors.LabelControl labelControl66;
         private DevExpress.XtraEditors.LabelControl labelControl67;
+        private DevExpress.XtraBars.BarButtonItem btn_NhapHang;
+        private DevExpress.XtraBars.BarButtonItem btn_HangHoa;
+        private DevExpress.XtraBars.BarButtonItem btn_BanHang;
+        private DevExpress.XtraBars.BarButtonItem btn_LoaiHang;
+        private DevExpress.XtraBars.BarButtonItem btn_DoanhThu;
+        private DevExpress.XtraBars.BarButtonItem btn_BaoCao;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup11;
+        private DevExpress.XtraBars.RibbonGalleryBarItem ribbonGalleryBarItem1;
+        private DevExpress.XtraBars.BarButtonItem btn_DangKy;
+        private DevExpress.XtraBars.SkinPaletteRibbonGalleryBarItem skinPaletteRibbonGalleryBarItem1;
     }
 }

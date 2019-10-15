@@ -37,6 +37,12 @@ namespace QL_CuaHangQuanAo
             btn_PhanQuyen.Enabled = !e;
             btn_PhucHoi.Enabled = !e;
             btn_SaoLuu.Enabled = !e;
+            btn_NhapHang.Enabled = !e;
+            btn_HangHoa.Enabled = !e;
+            btn_BanHang.Enabled = !e;
+            btn_LoaiHang.Enabled = !e;
+            btn_DoanhThu.Enabled = !e;
+            btn_BaoCao.Enabled = !e;
         }
 
         private void QL_CuaHangQuanAo_Load(object sender, EventArgs e)
@@ -95,8 +101,13 @@ namespace QL_CuaHangQuanAo
             if (XtraMessageBox.Show("Bạn có muốn đăng xuất?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 DisEndMenuLogin(true, idlogin);
-                Btn_Logout_ItemClick(sender, e);
+                //Btn_Logout_ItemClick(sender, e);
             }
+        }
+
+        private void Btn_Changepass_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
         }
     }
 }
