@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="QL_SHOP">
+  <DataContextMoniker Name="/QL_SHOPDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c72c04e9-3e2c-4c2f-a88c-1ef9fe8d2fec" absoluteBounds="2.25, 2.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/QL_SHOPDataContext/NhaCC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c880b7b-a515-4837-ae54-2387a6b0d1fd" absoluteBounds="2.265, 2.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1b8196df-c8db-48ce-b781-ef2324e2acdf" absoluteBounds="0.75, 3.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/QL_SHOPDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="16a506bd-a207-4b96-a031-14466ad1421a" absoluteBounds="0.76500000000000012, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

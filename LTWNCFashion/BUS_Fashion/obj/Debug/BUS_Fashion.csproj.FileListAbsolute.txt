@@ -1,0 +1,11 @@
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.dll
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.pdb
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.dll
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.pdb
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll.config
+D:\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csprojAssemblyReference.cache
+D:\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csproj.CopyComplete
+D:\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.dll
+D:\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.pdb
