@@ -8,3 +8,7 @@ G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+D:\AndroidDA\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+D:\AndroidDA\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\AndroidDA\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+D:\AndroidDA\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb

@@ -11,7 +11,7 @@ namespace DAL_Fashion
 {
     public class DAL_NguoiDung
     {
-        DataFashionDataContext db = new DataFashionDataContext();
+        DBFashionDataContext db = new DBFashionDataContext();
         public DataTable getNguoiDung()
         {
             var nd = db.QL_NguoiDungs.Select(t => t);

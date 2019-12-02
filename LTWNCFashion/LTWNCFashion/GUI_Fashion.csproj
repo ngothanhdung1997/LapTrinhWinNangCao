@@ -162,6 +162,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BUS_Fashion\BUS_Fashion.csproj">
       <Project>{66a47d5d-f1c8-4c11-9cbd-26bd73f2c0cf}</Project>
       <Name>BUS_Fashion</Name>
@@ -170,9 +173,6 @@
       <Project>{0f48db72-6ab8-4d8f-8dec-f7f738fa4bc7}</Project>
       <Name>DTO_Fashion</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

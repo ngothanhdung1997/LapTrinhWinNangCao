@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DBFashion">
+  <DataContextMoniker Name="/DBFashionDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0e591116-7973-4dd7-ba80-9e4f8214933e" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DBFashionDataContext/QL_ManHinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="996149d1-6106-4337-9da5-51704f362814" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c5fea9e-59e5-40dd-a07b-627a255e9518" absoluteBounds="0.75, 2.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBFashionDataContext/QL_NguoiDung" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f8cf0e57-84d8-405e-9a8c-f30d44461d73" absoluteBounds="0.765, 3.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0bd36ba-a11a-48ff-855c-ca59e56409dd" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/DBFashionDataContext/QL_NguoiDungNhomNguoiDung" />
+      <nestedChildShapes>
+        <elementListCompartment Id="22643d4a-b296-4a68-9654-eb4ad8a52524" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6332e03b-b383-47ca-87b3-841b44548887" absoluteBounds="3.75, 3.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/DBFashionDataContext/QL_NhomNguoiDung" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2faa6d9f-d90d-4b55-8d71-dbc805cc8039" absoluteBounds="3.765, 4.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="26f033a1-4175-4614-854f-2a2f8677323a" absoluteBounds="6.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/DBFashionDataContext/QL_PhanQuyen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9a93d5e9-30da-4e09-8407-5eb837b83150" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
