@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context.cs" />
+    <Compile Include="DAL_HangHoa.cs" />
+    <Compile Include="DAL_HH.cs" />
+    <Compile Include="DAL_HoaDon.cs" />
     <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_NguoiDung.cs" />
     <Compile Include="DataFashion.designer.cs">
@@ -60,6 +64,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QL_SHOP.dbml</DependentUpon>
     </Compile>
+    <Compile Include="testc.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -46,5 +46,16 @@ namespace LTWNCFashion.Properties {
                 return ((string)(this["Setting"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FR598GF\\SQLEXPRESS;Initial Catalog=QL_SHOP;Persist Security I" +
+            "nfo=True;User ID=sa;Password=huynhbao123")]
+        public string QL_SHOPConnectionString {
+            get {
+                return ((string)(this["QL_SHOPConnectionString"]));
+            }
+        }
     }
 }

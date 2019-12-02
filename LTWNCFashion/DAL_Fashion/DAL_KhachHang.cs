@@ -8,9 +8,8 @@ using DTO_Fashion;
 
 namespace DAL_Fashion
 {
-    public class DAL_KhachHang
+    public class DAL_KhachHang:Context
     {
-        QL_SHOPDataContext db = new QL_SHOPDataContext();
         public DataTable getKhachHang()
         {
             var kh = db.KhachHangs.Select(t => t);
@@ -47,8 +46,6 @@ namespace DAL_Fashion
             {
                 return false;
             }
-
-
         }
         public bool UpdateKhachHang(DTO_KhachHang a)
         {

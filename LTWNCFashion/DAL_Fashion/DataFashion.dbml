@@ -1,24 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Fashion" Class="DataFashionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7REME9F\SQLEXPRESS;Initial Catalog=Fashion;User ID=sa" SettingsObjectName="DAL_Fashion.Properties.Settings" SettingsPropertyName="FashionConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.QL_ManHinh" Member="QL_ManHinhs">
+    <Type Name="QL_ManHinh">
+      <Column Name="MaManHinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="TenManHinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.QL_NguoiDung" Member="QL_NguoiDungs">
     <Type Name="QL_NguoiDung">
       <Column Name="TenDangNhap" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MatKhau" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="TinhTrang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.KHACHHANG" Member="KHACHHANGs">
-    <Type Name="KHACHHANG">
-      <Column Name="MaKH" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="HoTenKH" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="SDT" Type="System.String" DbType="NChar(11)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.QL_ManHinh" Member="QL_ManHinhs">
-    <Type Name="QL_ManHinh">
-      <Column Name="MaManHinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="TenManHinh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.QL_NguoiDungNhomNguoiDung" Member="QL_NguoiDungNhomNguoiDungs">

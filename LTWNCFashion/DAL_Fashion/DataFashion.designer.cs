@@ -33,9 +33,6 @@ namespace DAL_Fashion
     partial void InsertQL_NguoiDung(QL_NguoiDung instance);
     partial void UpdateQL_NguoiDung(QL_NguoiDung instance);
     partial void DeleteQL_NguoiDung(QL_NguoiDung instance);
-    partial void InsertKHACHHANG(KHACHHANG instance);
-    partial void UpdateKHACHHANG(KHACHHANG instance);
-    partial void DeleteKHACHHANG(KHACHHANG instance);
     partial void InsertQL_NhomNguoiDung(QL_NhomNguoiDung instance);
     partial void UpdateQL_NhomNguoiDung(QL_NhomNguoiDung instance);
     partial void DeleteQL_NhomNguoiDung(QL_NhomNguoiDung instance);
@@ -71,27 +68,19 @@ namespace DAL_Fashion
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<QL_NguoiDung> QL_NguoiDungs
-		{
-			get
-			{
-				return this.GetTable<QL_NguoiDung>();
-			}
-		}
-		
-		public System.Data.Linq.Table<KHACHHANG> KHACHHANGs
-		{
-			get
-			{
-				return this.GetTable<KHACHHANG>();
-			}
-		}
-		
 		public System.Data.Linq.Table<QL_ManHinh> QL_ManHinhs
 		{
 			get
 			{
 				return this.GetTable<QL_ManHinh>();
+			}
+		}
+		
+		public System.Data.Linq.Table<QL_NguoiDung> QL_NguoiDungs
+		{
+			get
+			{
+				return this.GetTable<QL_NguoiDung>();
 			}
 		}
 		
@@ -116,6 +105,51 @@ namespace DAL_Fashion
 			get
 			{
 				return this.GetTable<QL_PhanQuyen>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QL_ManHinh")]
+	public partial class QL_ManHinh
+	{
+		
+		private string _MaManHinh;
+		
+		private string _TenManHinh;
+		
+		public QL_ManHinh()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaManHinh", DbType="NChar(10)")]
+		public string MaManHinh
+		{
+			get
+			{
+				return this._MaManHinh;
+			}
+			set
+			{
+				if ((this._MaManHinh != value))
+				{
+					this._MaManHinh = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenManHinh", DbType="NVarChar(50)")]
+		public string TenManHinh
+		{
+			get
+			{
+				return this._TenManHinh;
+			}
+			set
+			{
+				if ((this._TenManHinh != value))
+				{
+					this._TenManHinh = value;
+				}
 			}
 		}
 	}
@@ -226,185 +260,6 @@ namespace DAL_Fashion
 			if ((this.PropertyChanged != null))
 			{
 				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.KHACHHANG")]
-	public partial class KHACHHANG : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _MaKH;
-		
-		private string _HoTenKH;
-		
-		private string _DiaChi;
-		
-		private string _SDT;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnMaKHChanging(string value);
-    partial void OnMaKHChanged();
-    partial void OnHoTenKHChanging(string value);
-    partial void OnHoTenKHChanged();
-    partial void OnDiaChiChanging(string value);
-    partial void OnDiaChiChanged();
-    partial void OnSDTChanging(string value);
-    partial void OnSDTChanged();
-    #endregion
-		
-		public KHACHHANG()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaKH", DbType="NChar(10) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string MaKH
-		{
-			get
-			{
-				return this._MaKH;
-			}
-			set
-			{
-				if ((this._MaKH != value))
-				{
-					this.OnMaKHChanging(value);
-					this.SendPropertyChanging();
-					this._MaKH = value;
-					this.SendPropertyChanged("MaKH");
-					this.OnMaKHChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_HoTenKH", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
-		public string HoTenKH
-		{
-			get
-			{
-				return this._HoTenKH;
-			}
-			set
-			{
-				if ((this._HoTenKH != value))
-				{
-					this.OnHoTenKHChanging(value);
-					this.SendPropertyChanging();
-					this._HoTenKH = value;
-					this.SendPropertyChanged("HoTenKH");
-					this.OnHoTenKHChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DiaChi", DbType="NVarChar(100)")]
-		public string DiaChi
-		{
-			get
-			{
-				return this._DiaChi;
-			}
-			set
-			{
-				if ((this._DiaChi != value))
-				{
-					this.OnDiaChiChanging(value);
-					this.SendPropertyChanging();
-					this._DiaChi = value;
-					this.SendPropertyChanged("DiaChi");
-					this.OnDiaChiChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SDT", DbType="NChar(11)")]
-		public string SDT
-		{
-			get
-			{
-				return this._SDT;
-			}
-			set
-			{
-				if ((this._SDT != value))
-				{
-					this.OnSDTChanging(value);
-					this.SendPropertyChanging();
-					this._SDT = value;
-					this.SendPropertyChanged("SDT");
-					this.OnSDTChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.QL_ManHinh")]
-	public partial class QL_ManHinh
-	{
-		
-		private string _MaManHinh;
-		
-		private string _TenManHinh;
-		
-		public QL_ManHinh()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MaManHinh", DbType="NChar(10)")]
-		public string MaManHinh
-		{
-			get
-			{
-				return this._MaManHinh;
-			}
-			set
-			{
-				if ((this._MaManHinh != value))
-				{
-					this._MaManHinh = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TenManHinh", DbType="NVarChar(50)")]
-		public string TenManHinh
-		{
-			get
-			{
-				return this._TenManHinh;
-			}
-			set
-			{
-				if ((this._TenManHinh != value))
-				{
-					this._TenManHinh = value;
-				}
 			}
 		}
 	}

@@ -14,18 +14,20 @@ using DevExpress.XtraBars.Ribbon;
 
 namespace LTWNCFashion
 {
-    class NguoiDung
+    public class NguoiDung
     {
         public List<string> mamh = new List<string>();
         public int Check_Config()
         {
             if (Properties.Settings.Default.FashionConnectionString == string.Empty)
-                return 1; // Chuỗi cấu hình không tồn tại
+                return 1;// Chuỗi cấu hình không tồn tại
             try
             {
                 SqlConnection _Sqlconn = new SqlConnection(Properties.Settings.Default.FashionConnectionString);
                 if (_Sqlconn.State == System.Data.ConnectionState.Closed)
+                { 
                     _Sqlconn.Open();
+                }
                 return 0; // Kết nối thành công chuỗi cấu hình hợp lệ
             }
             catch
@@ -49,32 +51,18 @@ namespace LTWNCFashion
         }
         public DataTable GetServerName()
         {
-            SqlDataSourceEnumerator instance = SqlDataSourceEnumerator.Instance;
-            System.Data.DataTable table = instance.GetDataSources();
-            return table;
-        }
-        public List<string> GetDatabaseName(string pServerName, string pUser, string pPass)
-        {
-            List<string> _list = new List<string>();
             DataTable dt = new DataTable();
-            try
-            {
-                SqlDataAdapter da = new SqlDataAdapter("SELECT name FROM sys.databases", "Data Source=" + pServerName + ";Initial Catalog=" + "master" + ";UserID=" + pUser + ";pwd = " + pPass + "");
-                da.Fill(dt);
-                foreach (System.Data.DataRow row in dt.Rows)
-                {
-                    foreach (System.Data.DataColumn col in dt.Columns)
-                    {
-                        //MessageBox.Show(row[col].ToString());
-                        _list.Add(row[col].ToString());
-                    }
-                }
-            }
-            catch
-            {
-                return null;
-            }
-            return _list;
+            dt = SqlDataSourceEnumerator.Instance.GetDataSources();
+            return dt;
+        }
+        public DataTable GetDatabaseName(string pServerName, string pUser, string pPass)
+        {
+           
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("select name from sys.Databases", "Data Source=" + pServerName +
+                            ";Initial Catalog=master;User ID=" + pUser + ";pwd=" + pPass + "");
+            da.Fill(dt);
+            return dt;
         }
         public void ChangeConnectionString(string pServerName, string pDataBase, string pUser, string pPass)
         {

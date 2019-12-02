@@ -7,3 +7,12 @@ D:\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csprojAssemblyReference.cache
 D:\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csproj.CopyComplete
 D:\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.dll
 D:\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.pdb
+G:\LTWNC\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.dll.config
+G:\LTWNC\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.dll
+G:\LTWNC\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.pdb
+G:\LTWNC\LTWNCFashion\DAL_Fashion\bin\Debug\DTO_Fashion.dll
+G:\LTWNC\LTWNCFashion\DAL_Fashion\bin\Debug\DTO_Fashion.pdb
+G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csprojAssemblyReference.cache
+G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csproj.CopyComplete
+G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.dll
+G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.pdb
