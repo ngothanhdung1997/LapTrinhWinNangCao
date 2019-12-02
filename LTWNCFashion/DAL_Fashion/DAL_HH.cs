@@ -12,6 +12,10 @@ namespace DAL_Fashion
         {
             return db.HangHoas.Select(t => t).ToList<HangHoa>();
         }
+        public List<HangHoa> getGiaBan(string pMaH)
+        {
+            return db.HangHoas.Where(t => t.MaHang == int.Parse(pMaH)).ToList<HangHoa>();
+        }
         public List<TheLoai> getTheLoai()
         {
             return db.TheLoais.Select(t => t).ToList<TheLoai>();

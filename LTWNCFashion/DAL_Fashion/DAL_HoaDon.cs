@@ -47,24 +47,55 @@ namespace DAL_Fashion
             //});
             //return kq;
         }
-        public List<CT_HD> getCTHDtheoma(string pMaHD)
+        public DataTable getCTHDtheoma(string pMaHD)
         {
-            return db.CT_HDs.Where(t => t.MaHD == int.Parse(pMaHD)).ToList<CT_HD>();
-            //var CTHD = (from cthd in db.CT_HDs
-            //            from hh in db.HangHoas
-            //            where cthd.MaHang == hh.MaHang && cthd.MaHD == int.Parse(pMaHD)
-            //            select new
-            //            {
-            //                cthd.MaHD,
-            //                cthd.MaHang,
-            //                hh.TenHang,
-            //                cthd.SLBan,
-            //                cthd.GiaBan,
-            //                cthd.ThanhTien
-            //            });
-            //return CTHD;
+            //return db.CT_HDs.Where(t => t.MaHD == int.Parse(pMaHD)).ToList<CT_HD>();
+            var CTHD = (from cthd in db.CT_HDs
+                        join hh in db.HangHoas on cthd.MaHang equals hh.MaHang
+                        where cthd.MaHD == int.Parse(pMaHD)
+                        select new
+                        {
+                            MaHang = cthd.MaHang,
+                            TenHang = hh.TenHang,
+                            SLBan = cthd.SLBan,
+                            GiaBan = cthd.GiaBan,
+                            ThanhTien = cthd.ThanhTien
+                        });
+            var resultTable = new DataTable();
+            bool firstPass = true;
+            foreach (var item in CTHD)
+            {
+                if (firstPass)
+                {
+                    Array.ForEach(item.GetType().GetProperties(), p => resultTable.Columns.Add(new DataColumn(p.Name)));
+                    firstPass = false;
+                }
+                var newRow = resultTable.NewRow();
+                Array.ForEach(item.GetType().GetProperties(), p => newRow[p.Name] = p.GetValue(item, null));
+                resultTable.Rows.Add(newRow);
+            }
+            return resultTable;
         }
-
+        //insert chi tiet hoa don
+        public bool InsertCTHD(DTO_CTHD a)
+        {
+            try
+            {
+                CT_HD insert = new CT_HD();
+                insert.MaHD = int.Parse(a.MaHD);
+                insert.MaHang = int.Parse(a.MaH);
+                insert.SLBan = int.Parse(a.SLBan);
+                insert.GiaBan = int.Parse(a.GiaBan);
+                insert.ThanhTien = int.Parse(a.ThanhTien); 
+                db.CT_HDs.InsertOnSubmit(insert);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         //insert hoa don
         public bool InsertHoaDon(DTO_HoaDon a)
         {

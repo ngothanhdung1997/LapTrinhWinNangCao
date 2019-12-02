@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace BUS_Fashion
         {
             return dalhd.getHD();
         }
-        public List<CT_HD> getCTHD(string pMahd)
+        public DataTable getCTHD(string pMahd)
         {
             return dalhd.getCTHDtheoma(pMahd);
         }
@@ -30,6 +31,7 @@ namespace BUS_Fashion
         {
             return dalhd.getNV();
         }
+        //insert  update delete HOADON
         public bool InsertHoaDon(DTO_HoaDon a)
         {
             return dalhd.InsertHoaDon(a);
@@ -41,6 +43,11 @@ namespace BUS_Fashion
         public bool DeleteHoaDon(DTO_HoaDon a)
         {
             return dalhd.DeleteHoaDon(a);
+        }
+        //insert  update delete CTHD
+        public bool InsertCT_HD(DTO_CTHD a)
+        {
+            return dalhd.InsertCTHD(a);
         }
     }
 }

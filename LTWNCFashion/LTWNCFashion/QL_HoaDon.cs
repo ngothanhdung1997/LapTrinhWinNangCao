@@ -104,5 +104,17 @@ namespace LTWNCFashion
                 XtraMessageBox.Show("Sửa thất bại.");
             }
         }
+        private void cboTSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                cboGB.DataSource = hh.getGiaBan(cboTSP.SelectedValue.ToString());
+                cboGB.DisplayMember = "Dongia";
+                cboGB.ValueMember = "Dongia";
+            }
+            catch
+            { return; }
+            
+        }
     }
 }
