@@ -1,0 +1,10 @@
+D:\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+D:\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+D:\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
+D:\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
+G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
