@@ -47,7 +47,8 @@ namespace LTWNCFashion
             int numrow;
             numrow = e.RowIndex;
             txtMaHD.Text = gdv_HD.Rows[numrow].Cells[0].Value.ToString();
-            cboTNV.Text = gdv_HD.Rows[numrow].Cells[1].Value.ToString();
+            string manv = gdv_HD.Rows[numrow].Cells[1].Value.ToString();
+            cboTNV.DataSource = bshd.getNVtheoma(manv);
             string makh = gdv_HD.Rows[numrow].Cells[2].Value.ToString();
             cbo_TKH.DataSource = bshd.getKHtheoma(makh);
             txtTT.Text = gdv_HD.Rows[numrow].Cells[3].Value.ToString();
@@ -61,7 +62,8 @@ namespace LTWNCFashion
         {
             try
             {
-                DTO_HoaDon hd = new DTO_HoaDon(txtMaHD.Text, cbo_TKH.SelectedValue.ToString(),cboTNV.SelectedValue.ToString(),
+                txtMaHD.Clear();
+                DTO_HoaDon hd = new DTO_HoaDon(txtMaHD.Text,cboTNV.SelectedValue.ToString(), cbo_TKH.SelectedValue.ToString(),
                     txtTT.Text,DateTime.Parse(dateEdit1.DateTime.ToString()),txtSDT.Text,txtGhiChu.Text);
                 bshd.InsertHoaDon(hd);
                 XtraMessageBox.Show("Thêm thành công.");
@@ -71,7 +73,6 @@ namespace LTWNCFashion
             {
                 XtraMessageBox.Show("Thêm thất bại.");
             }
-            
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -110,11 +111,201 @@ namespace LTWNCFashion
             {
                 cboGB.DataSource = hh.getGiaBan(cboTSP.SelectedValue.ToString());
                 cboGB.DisplayMember = "Dongia";
-                cboGB.ValueMember = "Dongia";
             }
             catch
             { return; }
             
+        }
+
+        private void simpleButton6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                DTO_CTHD cthd = new DTO_CTHD(txtMaHD.Text, cboTSP.SelectedValue.ToString(), num_SL.Value.ToString(), cboGB.Text, tt);
+                bshd.InsertCT_HD(cthd);
+                XtraMessageBox.Show("Thêm thành công.");
+                LoadData();
+            }
+            catch
+            {
+                XtraMessageBox.Show("Thêm thất bại.");
+            }
+            
+        }
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                DTO_CTHD cthd = new DTO_CTHD(txtMaHD.Text, cboTSP.SelectedValue.ToString(), num_SL.Value.ToString(), cboGB.Text, tt);
+                bshd.UpdateCTHD(cthd);
+                XtraMessageBox.Show("Sửa thành công.");
+                LoadData();
+            }
+            catch
+            {
+                XtraMessageBox.Show("Sửa thất bại.");
+            }
+            
+        }
+        private void num_SL_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                txtThanhTien.Text = tt;
+            }
+            catch
+            {
+                return;
+            }
+           
+        }
+
+        private void cboGB_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                txtThanhTien.Text = tt;
+            }
+            catch
+            { return; }
+            
+        }
+
+        private void gdvCTHD_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                int numrow;
+                numrow = e.RowIndex;
+                num_SL.Value = int.Parse(gdvCTHD.Rows[numrow].Cells["SL"].Value.ToString());
+                cboGB.Text = gdvCTHD.Rows[numrow].Cells["GB"].Value.ToString();
+                txtThanhTien.Text = gdvCTHD.Rows[numrow].Cells["TT"].Value.ToString();
+            }
+            catch
+            { return; }
+            
+        }
+
+        private void simpleButton5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DTO_CTHD cthd = new DTO_CTHD(txtMaHD.Text, gdvCTHD.CurrentRow.Cells["MaSP"].Value.ToString());
+                bshd.DeleteCTHD(cthd);
+                XtraMessageBox.Show("Xóa thành công.");
+                //LoadData();
+            }
+            catch
+            {
+                XtraMessageBox.Show("Xóa thất bại.");
+            }
+        }
+
+        private void simpleButton7_Click(object sender, EventArgs e)
+        {
+            string ngaybd = dateNgayBD.DateTime.ToString();
+            string ngaykt = dateNgayKT.DateTime.ToString();
+            gdv_HD.DataSource = bshd.SearchTheoNgay(ngaybd,ngaykt);
+        }
+        private Form ktraform(Type ftype)
+        {
+            foreach (Form f in this.MdiChildren)
+            {
+                if (f.GetType() == ftype)
+                {
+                    return f;
+                }
+            }
+            return null;
+        }
+        private void simpleButton9_Click(object sender, EventArgs e)
+        {
+            Form frm = ktraform(typeof(FrmKhachHang));
+            if (frm == null)
+            {
+                FrmKhachHang f = new FrmKhachHang();
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+        private void XuatExcel(string file)
+        {
+            try
+            {
+                // creating Excel Application  
+                Microsoft.Office.Interop.Excel._Application app = new Microsoft.Office.Interop.Excel.Application();
+                // creating new WorkBook within Excel application  
+                Microsoft.Office.Interop.Excel._Workbook workbook = app.Workbooks.Add(Type.Missing);
+                // creating new Excelsheet in workbook  
+                Microsoft.Office.Interop.Excel._Worksheet worksheet = null;
+                // get the reference of first sheet. By default its name is Sheet1.  
+                // store its reference to worksheet  
+                worksheet = workbook.Sheets["Sheet1"];
+                worksheet = workbook.ActiveSheet;
+                // changing the name of active sheet  
+                worksheet.Name = "Bán hàng";
+                Microsoft.Office.Interop.Excel.Range head = worksheet.Range["A1", "I1"];
+                head.MergeCells = true;
+                head.Value2 = "Báo Cáo Bán Hàng";
+                head.Font.Bold = true;
+                head.Font.Size = 20;
+                head.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
+
+                //from
+                Microsoft.Office.Interop.Excel.Range fromDate = worksheet.Range["A3", "C3"];
+                fromDate.MergeCells = true;
+                fromDate.Value2 = "Từ ngày: " + dateNgayBD.Text;
+                fromDate.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
+                //to
+                Microsoft.Office.Interop.Excel.Range toDate = worksheet.Range["F3", "H3"];
+                toDate.MergeCells = true;
+                toDate.Value2 = "Đến ngày: " + dateNgayKT.Text;
+                toDate.HorizontalAlignment = Microsoft.Office.Interop.Excel.XlHAlign.xlHAlignCenter;
+                // storing header part in Excel  
+                for (int i = 1; i < gdv_HD.Columns.Count - 2; i++)
+                {
+                    worksheet.Cells[5, i] = gdv_HD.Columns[i - 1].HeaderText;
+                }
+                worksheet.Range["A5", "I5"].Borders.LineStyle = Microsoft.Office.Interop.Excel.Constants.xlSolid;
+
+                // storing Each row and column value to excel sheet  
+                for (int i = 0; i < gdv_HD.Rows.Count; i++)
+                {
+                    for (int j = 0; j < gdv_HD.Columns.Count-3; j++)
+                    {
+                        worksheet.Cells[i + 6, j + 1] = gdv_HD.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                // save the application  
+                workbook.SaveAs(file);
+
+                // see the excel sheet behind the program  
+                if (MessageBox.Show("Xuất tệp excel thành công!") == DialogResult.OK)
+                    app.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Xuất tệp excel thất bại!");
+            }
+        }
+
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.Filter = "Excel files (*.xlsx)|*.xlsx";
+            sfd.RestoreDirectory = true;
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                XuatExcel(sfd.FileName);
+            }
         }
     }
 }

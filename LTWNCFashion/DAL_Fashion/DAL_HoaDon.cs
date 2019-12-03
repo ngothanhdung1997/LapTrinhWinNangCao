@@ -21,6 +21,11 @@ namespace DAL_Fashion
             return db.NhanViens.Select(t => t).ToList<NhanVien>();
 
         }
+        public List<NhanVien> getNVtheoma(string pMaNV)
+        {
+            return db.NhanViens.Where(t => t.MaNV == int.Parse(pMaNV)).ToList<NhanVien>();
+
+        }
         public List<KhachHang> getKHtheoma(string pMaKH)
         {
             return db.KhachHangs.Where(t => t.MaKH == int.Parse(pMaKH)).ToList<KhachHang>();
@@ -96,10 +101,41 @@ namespace DAL_Fashion
                 return false;
             }
         }
+        //Update Chi Tiet Hoa Don
+        public bool UpdateCTHD(DTO_CTHD a)
+        {
+            try
+            {
+                CT_HD update = db.CT_HDs.Where(p => p.MaHD.ToString().Equals(a.MaHD) && p.MaHang.ToString().Equals(a.MaH)).SingleOrDefault(); 
+                update.SLBan = int.Parse(a.SLBan);
+                update.GiaBan = int.Parse(a.GiaBan);
+                update.ThanhTien = int.Parse(a.ThanhTien);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+        //Delete Chi Tiet Hoa Don
+        public bool DeleteCTHD(DTO_CTHD a)
+        {
+            try
+            {
+                CT_HD delete = db.CT_HDs.Where(p => p.MaHD.ToString().Equals(a.MaHD) && p.MaHang.ToString().Equals(a.MaH)).SingleOrDefault();
+                db.CT_HDs.DeleteOnSubmit(delete);
+                db.SubmitChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
         //insert hoa don
         public bool InsertHoaDon(DTO_HoaDon a)
         {
-            
             try
             {
                 HoaDon insert = new HoaDon();
@@ -154,6 +190,11 @@ namespace DAL_Fashion
             {
                 return false;
             }
+        }
+        //Search Hóa đơn theo ngày
+        public List<HoaDon> searchHD(string pNgayBD, string pNgayKT)
+        {
+            return db.HoaDons.Where(t => t.NgayLapHD >= DateTime.Parse(pNgayBD) && t.NgayLapHD <= DateTime.Parse(pNgayKT)).ToList<HoaDon>();
         }
     }
 }

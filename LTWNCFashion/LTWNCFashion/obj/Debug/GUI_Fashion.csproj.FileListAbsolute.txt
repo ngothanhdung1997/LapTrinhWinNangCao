@@ -197,7 +197,6 @@ G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.CauHinh.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmHangHoa.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmKhachHang.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmNhomNguoiDung.resources
-G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.NhaCC.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.Properties.Resources.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\GUI_Fashion.csproj.GenerateResource.cache
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.exe.licenses
@@ -207,3 +206,5 @@ G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.pdb
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.Login.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.Form_Main.resources
 G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.QL_HoaDon.resources
+G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmNhapHang.resources
+G:\LTWNC\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmNhanVien.resources
