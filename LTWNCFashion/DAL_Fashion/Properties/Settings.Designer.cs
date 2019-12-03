@@ -26,8 +26,8 @@ namespace DAL_Fashion.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7REME9F\\SQLEXPRESS;Initial Catalog=QL_SHOP;User ID=sa;Passwor" +
-            "d=sa2012")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FR598GF\\SQLEXPRESS;Initial Catalog=QL_SHOP;User ID=sa;Passwor" +
+            "d=huynhbao123")]
         public string QL_SHOPConnectionString {
             get {
                 return ((string)(this["QL_SHOPConnectionString"]));
@@ -37,11 +37,22 @@ namespace DAL_Fashion.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-7REME9F\\SQLEXPRESS;Initial Catalog=QL_SHOP;User ID=sa;Passwor" +
-            "d=sa2012")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FR598GF\\SQLEXPRESS;Initial Catalog=QL_SHOP;User ID=sa;Passwor" +
+            "d=huynhbao123")]
         public string FashionConnectionString {
             get {
                 return ((string)(this["FashionConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FR598GF\\SQLEXPRESS;Initial Catalog=QL_SHOP;Persist Security I" +
+            "nfo=True;User ID=sa;Password=huynhbao123")]
+        public string QL_SHOPConnectionString1 {
+            get {
+                return ((string)(this["QL_SHOPConnectionString1"]));
             }
         }
     }

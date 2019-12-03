@@ -23,6 +23,10 @@ namespace BUS_Fashion
         {
             return dalhd.getKHtheoma(pMaKH);
         }
+        public List<NhanVien> getNVtheoma(string pMaNV)
+        {
+            return dalhd.getNVtheoma(pMaNV);
+        }
         public List<KhachHang> getListKhachHang()
         {
             return dalhd.getKH();
@@ -48,6 +52,19 @@ namespace BUS_Fashion
         public bool InsertCT_HD(DTO_CTHD a)
         {
             return dalhd.InsertCTHD(a);
+        }
+        public bool UpdateCTHD(DTO_CTHD a)
+        {
+            return dalhd.UpdateCTHD(a);
+        }
+        public bool DeleteCTHD(DTO_CTHD a)
+        {
+            return dalhd.DeleteCTHD(a);
+        }
+
+        public List<HoaDon> SearchTheoNgay(string pNgayBD, string pNgayKT)
+        {
+            return dalhd.searchHD(pNgayBD,pNgayKT);
         }
     }
 }

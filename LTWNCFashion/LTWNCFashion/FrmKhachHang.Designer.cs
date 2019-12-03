@@ -35,7 +35,7 @@
             this.btn_sua = new DevExpress.XtraEditors.SimpleButton();
             this.btn_xoa = new DevExpress.XtraEditors.SimpleButton();
             this.btn_them = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_luu = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_dong = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -56,6 +56,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -100,11 +101,11 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.98649F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.01351F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 141F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 585F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 584F));
             this.tableLayoutPanel3.Controls.Add(this.btn_sua, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_xoa, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_them, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.btn_luu, 3, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btn_dong, 3, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -116,7 +117,7 @@
             // btn_sua
             // 
             this.btn_sua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_sua.ImageOptions.Image")));
-            this.btn_sua.Location = new System.Drawing.Point(278, 3);
+            this.btn_sua.Location = new System.Drawing.Point(279, 3);
             this.btn_sua.Name = "btn_sua";
             this.btn_sua.Size = new System.Drawing.Size(100, 35);
             this.btn_sua.TabIndex = 2;
@@ -143,15 +144,14 @@
             this.btn_them.Text = "Thêm";
             this.btn_them.Click += new System.EventHandler(this.btn_them_Click);
             // 
-            // btn_luu
+            // btn_dong
             // 
-            this.btn_luu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_luu.ImageOptions.Image")));
-            this.btn_luu.Location = new System.Drawing.Point(419, 3);
-            this.btn_luu.Name = "btn_luu";
-            this.btn_luu.Size = new System.Drawing.Size(99, 35);
-            this.btn_luu.TabIndex = 3;
-            this.btn_luu.Text = "Lưu";
-            this.btn_luu.Click += new System.EventHandler(this.btn_luu_Click);
+            this.btn_dong.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_luu.ImageOptions.Image")));
+            this.btn_dong.Location = new System.Drawing.Point(420, 3);
+            this.btn_dong.Name = "btn_dong";
+            this.btn_dong.Size = new System.Drawing.Size(99, 35);
+            this.btn_dong.TabIndex = 3;
+            this.btn_dong.Text = "Đóng";
             // 
             // tableLayoutPanel4
             // 
@@ -159,7 +159,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.6707F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.3293F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 452F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 451F));
             this.tableLayoutPanel4.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.label3, 0, 2);
@@ -221,30 +221,28 @@
             // 
             // txtMakh
             // 
-            this.txtMakh.Enabled = false;
-            this.txtMakh.Location = new System.Drawing.Point(162, 3);
+            this.txtMakh.Location = new System.Drawing.Point(163, 3);
             this.txtMakh.Name = "txtMakh";
             this.txtMakh.Size = new System.Drawing.Size(174, 20);
             this.txtMakh.TabIndex = 4;
-            this.txtMakh.Visible = false;
             // 
             // txtTenkh
             // 
-            this.txtTenkh.Location = new System.Drawing.Point(162, 39);
+            this.txtTenkh.Location = new System.Drawing.Point(163, 39);
             this.txtTenkh.Name = "txtTenkh";
             this.txtTenkh.Size = new System.Drawing.Size(174, 20);
             this.txtTenkh.TabIndex = 5;
             // 
             // txtDiachi
             // 
-            this.txtDiachi.Location = new System.Drawing.Point(162, 82);
+            this.txtDiachi.Location = new System.Drawing.Point(163, 82);
             this.txtDiachi.Name = "txtDiachi";
             this.txtDiachi.Size = new System.Drawing.Size(247, 20);
             this.txtDiachi.TabIndex = 6;
             // 
             // txtsdt
             // 
-            this.txtsdt.Location = new System.Drawing.Point(162, 121);
+            this.txtsdt.Location = new System.Drawing.Point(163, 121);
             this.txtsdt.Name = "txtsdt";
             this.txtsdt.Size = new System.Drawing.Size(119, 20);
             this.txtsdt.TabIndex = 7;
@@ -252,7 +250,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(415, 0);
+            this.label5.Location = new System.Drawing.Point(416, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 8;
@@ -261,7 +259,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(415, 36);
+            this.label6.Location = new System.Drawing.Point(416, 36);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 10;
@@ -269,7 +267,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(552, 39);
+            this.txtEmail.Location = new System.Drawing.Point(553, 39);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(174, 20);
             this.txtEmail.TabIndex = 11;
@@ -280,7 +278,7 @@
             this.cboGT.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cboGT.Location = new System.Drawing.Point(552, 3);
+            this.cboGT.Location = new System.Drawing.Point(553, 3);
             this.cboGT.Name = "cboGT";
             this.cboGT.Size = new System.Drawing.Size(121, 21);
             this.cboGT.TabIndex = 12;
@@ -295,7 +293,8 @@
             this.Column5,
             this.Column3,
             this.Column4,
-            this.Column6});
+            this.Column6,
+            this.Column7});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 219);
             this.dataGridView1.Name = "dataGridView1";
@@ -339,6 +338,13 @@
             this.Column6.HeaderText = "Email";
             this.Column6.Name = "Column6";
             // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "HoaDons";
+            this.Column7.HeaderText = "Column7";
+            this.Column7.Name = "Column7";
+            this.Column7.Visible = false;
+            // 
             // FrmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -370,7 +376,7 @@
         private DevExpress.XtraEditors.SimpleButton btn_sua;
         private DevExpress.XtraEditors.SimpleButton btn_xoa;
         private DevExpress.XtraEditors.SimpleButton btn_them;
-        private DevExpress.XtraEditors.SimpleButton btn_luu;
+        private DevExpress.XtraEditors.SimpleButton btn_dong;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -389,5 +395,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
     }
 }

@@ -48,9 +48,7 @@
     <Compile Include="DAL_HoaDon.cs" />
     <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_NguoiDung.cs" />
-    <Compile Include="DAL_NhaCC.cs" />
-    <Compile Include="DAL_TheLoai.cs" />
-    <Compile Include="DAL_ThuongHieu.cs" />
+    <Compile Include="DAL_NhanVien.cs" />
     <Compile Include="DataFashion.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

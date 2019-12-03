@@ -51,7 +51,7 @@
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.simpleButton2.Location = new System.Drawing.Point(254, 240);
+            this.simpleButton2.Location = new System.Drawing.Point(257, 231);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(77, 31);
             this.simpleButton2.TabIndex = 5;
@@ -63,7 +63,7 @@
             this.btn_DN.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DN.Appearance.Options.UseFont = true;
             this.btn_DN.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btn_DN.Location = new System.Drawing.Point(156, 240);
+            this.btn_DN.Location = new System.Drawing.Point(159, 231);
             this.btn_DN.Name = "btn_DN";
             this.btn_DN.Size = new System.Drawing.Size(77, 31);
             this.btn_DN.TabIndex = 4;
@@ -82,9 +82,9 @@
             this.groupControl1.Controls.Add(this.labelControl2);
             this.groupControl1.Controls.Add(this.txt_User);
             this.groupControl1.Controls.Add(this.labelControl1);
-            this.groupControl1.Location = new System.Drawing.Point(39, 23);
+            this.groupControl1.Location = new System.Drawing.Point(39, 28);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(414, 197);
+            this.groupControl1.Size = new System.Drawing.Size(401, 184);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Thông tin đăng nhập";
             // 
@@ -153,12 +153,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 299);
+            this.ClientSize = new System.Drawing.Size(496, 278);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.btn_DN);
             this.Controls.Add(this.groupControl1);
             this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
