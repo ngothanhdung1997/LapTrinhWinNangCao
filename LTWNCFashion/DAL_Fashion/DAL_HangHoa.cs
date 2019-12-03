@@ -36,7 +36,8 @@ namespace DAL_Fashion
                 insert.MaThuongHieu = a.MaThuongHieu;
                 insert.MaLoai = a.MaLoai;
                 insert.TenHang = a.TenHang;
-                insert.Dongia = a.Dongia;
+                insert.DonGiaNhap = a.DongiaNhap;
+                insert.DonGiaBan = a.DongiaBan;
                 insert.SoluongTon = a.SoluongTon;
                 insert.DVT = a.DVT;
                 insert.MoTa = a.MoTa;
@@ -60,7 +61,8 @@ namespace DAL_Fashion
                 update.MaThuongHieu = a.MaThuongHieu;
                 update.MaLoai = a.MaLoai;
                 update.TenHang = a.TenHang;
-                update.Dongia = a.Dongia;
+                update.DonGiaNhap = a.DongiaNhap;
+                update.DonGiaBan = a.DongiaBan;
                 update.SoluongTon = a.SoluongTon;
                 update.DVT = a.DVT;
                 update.MoTa = a.MoTa;

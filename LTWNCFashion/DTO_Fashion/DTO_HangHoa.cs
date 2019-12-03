@@ -12,7 +12,8 @@ namespace DTO_Fashion
         private int _MaTH;
         private int _MaL;
         private string _TenH;
-        private int _DonG;
+        private int _DonGiaNhap;
+        private int _DonGiaBan;
         private int _SoL;
         private string _DVT;
         private string _MoTa;
@@ -38,10 +39,15 @@ namespace DTO_Fashion
             get { return _TenH; }
             set { _TenH = value; }
         }
-        public int Dongia
+        public int DongiaNhap
         {
-            get { return _DonG; }
-            set { _DonG = value; }
+            get { return _DonGiaNhap; }
+            set { _DonGiaNhap = value; }
+        }
+        public int DongiaBan
+        {
+            get { return _DonGiaBan; }
+            set { _DonGiaBan = value; }
         }
         public int SoluongTon
         {
@@ -64,13 +70,14 @@ namespace DTO_Fashion
             set { _img = value; }
         }
         //insert and update
-        public DTO_HangHoa(string mah, int math, int mal, string tenh, int dongia, int soluong, string dvt, string mota, string img)
+        public DTO_HangHoa(string mah, int math, int mal, string tenh, int dongianhap,int dongiaban, int soluong, string dvt, string mota, string img)
         {
             this.MaHang = mah;
             this.MaThuongHieu = math;
             this.MaLoai = mal;
             this.TenHang = tenh;
-            this.Dongia = dongia;
+            this.DongiaNhap = dongianhap;
+            this.DongiaBan = dongiaban;
             this.SoluongTon = soluong;
             this.DVT = dvt;
             this.MoTa = mota;

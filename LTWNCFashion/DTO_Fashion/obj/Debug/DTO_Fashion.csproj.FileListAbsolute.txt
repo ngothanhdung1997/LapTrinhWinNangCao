@@ -8,3 +8,8 @@ G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache

@@ -29,20 +29,20 @@ namespace LTWNCFashion
 
         private void LoadData()
         {
-            gdv_HH.DataSource = bs_hh.getListHangHoa();
+            dataGridView1.DataSource = bs_hh.getListHangHoa();
             //dataGridView1.DataSource = hh.getHH();
             cboLoai.DataSource = hh.getTheLoai();
             cboLoai.DisplayMember = "TenLoai";
             cboLoai.ValueMember = "MaLoai";
-            cboTH.DataSource = hh.getThuongHieu();
-            cboTH.DisplayMember = "TenTH";
-            cboTH.ValueMember = "MaThuongHieu";
+            cboThuongHieu.DataSource = hh.getThuongHieu();
+            cboThuongHieu.DisplayMember = "TenTH";
+            cboThuongHieu.ValueMember = "MaThuongHieu";
         }
 
         private void btn_them_Click(object sender, EventArgs e)
         {
-            DTO_HangHoa hh = new DTO_HangHoa(txtMaHang.Text, int.Parse(cboTH.SelectedValue.ToString()), int.Parse(cboLoai.SelectedValue.ToString()),
-                txtTenHang.Text, int.Parse(txtGia.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, txtHinhAnh.Text);
+            DTO_HangHoa hh = new DTO_HangHoa(txtMaHang.Text, int.Parse(cboThuongHieu.SelectedValue.ToString()), int.Parse(cboLoai.SelectedValue.ToString()),
+                txtTenHang.Text, int.Parse(txtDonGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSL.Text), cboDVT.Text, txtMoTa.Text, txtHinh.Text);
             bs_hh.InsertHangHoa(hh);
             XtraMessageBox.Show("Thêm thành công.");
             LoadData();
@@ -58,26 +58,49 @@ namespace LTWNCFashion
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            DTO_HangHoa hh = new DTO_HangHoa(txtMaHang.Text, int.Parse(cboTH.Text), int.Parse(cboLoai.Text),
-                txtTenHang.Text, int.Parse(txtGia.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, txtHinhAnh.Text);
+            DTO_HangHoa hh = new DTO_HangHoa(txtMaHang.Text, int.Parse(cboThuongHieu.Text), int.Parse(cboLoai.Text),
+                txtTenHang.Text, int.Parse(txtDonGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSL.Text), cboDVT.Text, txtMoTa.Text, txtHinh.Text);
             bs_hh.UpdateHangHoa(hh);
             XtraMessageBox.Show("Sửa thành công.");
             LoadData();
         }
 
-        private void gdv_HH_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int numrow;
             numrow = e.RowIndex;
-            txtMaHang.Text = gdv_HH.Rows[numrow].Cells["MaH"].Value.ToString();
-            txtTenHang.Text = gdv_HH.Rows[numrow].Cells["TenH"].Value.ToString();
-            cboTH.Text = gdv_HH.Rows[numrow].Cells["MaTH"].Value.ToString();
-            cboLoai.Text = gdv_HH.Rows[numrow].Cells["MaL"].Value.ToString();
-            txtGia.Text = gdv_HH.Rows[numrow].Cells["DG"].Value.ToString();
-            txtSLT.Text = gdv_HH.Rows[numrow].Cells["SL"].Value.ToString();
-            cboDVT.Text = gdv_HH.Rows[numrow].Cells["DVT"].Value.ToString();
-            txtMoTa.Text = gdv_HH.Rows[numrow].Cells["mota"].Value.ToString();
-            txtHinhAnh.Text = gdv_HH.Rows[numrow].Cells["Image"].Value.ToString();
+            txtMaHang.Text = dataGridView1.Rows[numrow].Cells[0].Value.ToString();
+            txtTenHang.Text = dataGridView1.Rows[numrow].Cells[3].Value.ToString();
+            cboThuongHieu.Text = dataGridView1.Rows[numrow].Cells[1].Value.ToString();
+            cboLoai.Text = dataGridView1.Rows[numrow].Cells[2].Value.ToString();
+            txtDonGiaNhap.Text = dataGridView1.Rows[numrow].Cells[4].Value.ToString();
+            txtSL.Text = dataGridView1.Rows[numrow].Cells[5].Value.ToString();
+            cboDVT.Text = dataGridView1.Rows[numrow].Cells[6].Value.ToString();
+            txtMoTa.Text = dataGridView1.Rows[numrow].Cells[7].Value.ToString();
+            txtHinh.Text = dataGridView1.Rows[numrow].Cells[8].Value.ToString();
+            txtDonGiaBan.Text = dataGridView1.Rows[numrow].Cells[9].Value.ToString();
+        }
+        OpenFileDialog open;
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            open = new OpenFileDialog();
+            open.Filter= "jpg files (*.jpg)|*.jpg|All files (*.*)|*.*";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                txtHinh.Text = open.SafeFileName ;
+            }
+        }
+        
+        private void btnThemthhieu_Click(object sender, EventArgs e)
+        {
+            var frmth = new FrmThuongHieu();
+            frmth.ShowDialog();
+        }
+
+        private void btnThemloai_Click(object sender, EventArgs e)
+        {
+            var frmtl = new FrmTheLoai();
+            frmtl.ShowDialog();
         }
     }
 }

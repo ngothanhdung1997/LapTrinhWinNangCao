@@ -30,24 +30,46 @@ namespace LTWNCFashion
         }
         private void btn_them_Click(object sender, EventArgs e)
         {
-            DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text,txtTenkh.Text,cboGT.Text,txtDiachi.Text,txtsdt.Text,txtEmail.Text);
-            bUS_KhachHang.InsertKhachHang(kh);
-            LoadData();
+            txtMakh.Enabled = true;
+            txtMakh.Clear();
         }
 
         private void btn_xoa_Click(object sender, EventArgs e)
         {
-            DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text);
-            bUS_KhachHang.DeleteKhachHang(kh);
-            LoadData();
+            try
+            {
+                DialogResult r = MessageBox.Show("Bạn có muốn xóa?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (r == DialogResult.Yes)
+                {
+
+                    DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text);
+                    bUS_KhachHang.DeleteKhachHang(kh);
+                    MessageBox.Show("Xóa thành công");
+                    LoadData();
+                }
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("xóa thất bại");
+            }
+           
 
         }
 
         private void btn_sua_Click(object sender, EventArgs e)
         {
-            DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text,txtTenkh.Text,cboGT.Text,txtDiachi.Text,txtsdt.Text,txtEmail.Text);
-            bUS_KhachHang.UpdateKhachHang(kh);
-            LoadData();
+            try
+            {
+                DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text, txtTenkh.Text, cboGT.Text, txtDiachi.Text, txtsdt.Text, txtEmail.Text);
+                bUS_KhachHang.UpdateKhachHang(kh);
+                MessageBox.Show("Sửa thành công");
+                LoadData();
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("sửa thất bại");
+            }
+           
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -61,6 +83,13 @@ namespace LTWNCFashion
             txtsdt.Text = dataGridView1.Rows[numrow].Cells[4].Value.ToString();
             cboGT.Text = dataGridView1.Rows[numrow].Cells[2].Value.ToString();
             txtEmail.Text = dataGridView1.Rows[numrow].Cells[5].Value.ToString();
+        }
+
+        private void btn_luu_Click(object sender, EventArgs e)
+        {
+            DTO_KhachHang kh = new DTO_KhachHang(txtMakh.Text, txtTenkh.Text, cboGT.Text, txtDiachi.Text, txtsdt.Text, txtEmail.Text);
+            bUS_KhachHang.InsertKhachHang(kh);
+            LoadData();
         }
     }
 }

@@ -16,9 +16,13 @@ namespace LTWNCFashion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form_Main());
             Application.Run(new Form_Main());
             //Application.Run(new FrmKhachHang());
+            //Application.Run(new FrmTheLoai());
+            //Application.Run(new QL_HoaDon());
+            //Application.Run(new FrmNhaCC());
+            //Application.Run(new FrmThuongHieu());
+            //Application.Run(new FrmHangHoa());
         }
         //public static Main main = null;
     }

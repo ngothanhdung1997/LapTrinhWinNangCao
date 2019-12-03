@@ -16,3 +16,12 @@ G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csprojAssemblyReference.
 G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csproj.CopyComplete
 G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.dll
 G:\LTWNC\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.dll.config
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\bin\Debug\DAL_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\bin\Debug\DTO_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csprojAssemblyReference.cache
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.csproj.CopyComplete
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\DAL_Fashion\obj\Debug\DAL_Fashion.pdb

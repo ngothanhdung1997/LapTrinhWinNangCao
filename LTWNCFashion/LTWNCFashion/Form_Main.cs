@@ -81,10 +81,7 @@ namespace LTWNCFashion
                 {
                     int n = nd.Check_User(login.txt_User.Text, login.txt_Password.Text);
                     if (n == 0)
-                    { 
                         XtraMessageBox.Show("Tên đăng nhập không tồn tại !");
-                        login = new Login();
-                    }
                     if (n == 1)
                     {
                         XtraMessageBox.Show("Đăng nhâp thành công !");
@@ -153,12 +150,12 @@ namespace LTWNCFashion
             }
         }
 
-        private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmNhanVien));
+            Form frm = ktraform(typeof(FrmNhaCC));
             if (frm == null)
             {
-                FrmNhanVien f = new FrmNhanVien();
+                FrmNhaCC f = new FrmNhaCC();
                 f.MdiParent = this;
                 f.Show();
             }

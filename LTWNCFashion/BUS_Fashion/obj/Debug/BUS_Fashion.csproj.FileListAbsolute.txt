@@ -20,3 +20,14 @@ G:\LTWNC\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csprojAssemblyReference.
 G:\LTWNC\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csproj.CopyComplete
 G:\LTWNC\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.dll
 G:\LTWNC\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll.config
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.pdb
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csprojAssemblyReference.cache
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csproj.CopyComplete
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.dll
+D:\Laptrinhwin\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.pdb
