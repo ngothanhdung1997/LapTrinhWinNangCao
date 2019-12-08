@@ -8,19 +8,19 @@ namespace DTO_Fashion
 {
     public class DTO_CTHD
     {
-        private string _MaHD;
-        private string _MaH;
-        private string _SLBan;
-        private string _GiaBan;
-        private string _ThanhTien;
+        private int _MaHD;
+        private int _MaH;
+        private int _SLBan;
+        private int _GiaBan;
+        private int _ThanhTien;
 
-        public string MaHD { get => _MaHD; set => _MaHD = value; }
-        public string MaH { get => _MaH; set => _MaH = value; }
-        public string SLBan { get => _SLBan; set => _SLBan = value; }
-        public string GiaBan { get => _GiaBan; set => _GiaBan = value; }
-        public string ThanhTien { get => _ThanhTien; set => _ThanhTien = value; }
+        public int MaHD { get => _MaHD; set => _MaHD = value; }
+        public int MaH { get => _MaH; set => _MaH = value; }
+        public int SLBan { get => _SLBan; set => _SLBan = value; }
+        public int GiaBan { get => _GiaBan; set => _GiaBan = value; }
+        public int ThanhTien { get => _ThanhTien; set => _ThanhTien = value; }
         //insert and update cthd
-        public DTO_CTHD(string mahd, string mah, string slban, string giaban, string thanhtien)
+        public DTO_CTHD(int mahd, int mah, int slban, int giaban, int thanhtien)
         {
             this.MaHD = mahd;
             this.MaH = mah;
@@ -29,7 +29,7 @@ namespace DTO_Fashion
             this.ThanhTien = thanhtien;
         }
         //Delete 
-        public DTO_CTHD(string mahd, string mah)
+        public DTO_CTHD(int mahd, int mah)
         {
             this.MaHD = mahd;
             this.MaH = mah;

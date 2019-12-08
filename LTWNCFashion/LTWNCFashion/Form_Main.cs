@@ -167,5 +167,80 @@ namespace LTWNCFashion
                 frm.Activate();
             }
         }
+
+        private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = ktraform(typeof(FrmHangHoa));
+            if (frm == null)
+            {
+                FrmHangHoa f = new FrmHangHoa();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = ktraform(typeof(QL_HoaDon));
+            if (frm == null)
+            {
+                QL_HoaDon f = new QL_HoaDon();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+
+        private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = ktraform(typeof(FrmNhaCC));
+            if (frm == null)
+            {
+                FrmNhaCC f = new FrmNhaCC();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+
+        private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = ktraform(typeof(FrmTheLoai));
+            if (frm == null)
+            {
+                FrmTheLoai f = new FrmTheLoai();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
+
+        private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = ktraform(typeof(FrmThuongHieu));
+            if (frm == null)
+            {
+                FrmThuongHieu f = new FrmThuongHieu();
+                f.MdiParent = this;
+                f.Show();
+            }
+            else
+            {
+                frm.Activate();
+            }
+        }
     }
 }

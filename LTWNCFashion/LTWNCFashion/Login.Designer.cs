@@ -95,6 +95,7 @@
             this.chk_GhiNho.Properties.Caption = "Ghi Nhớ";
             this.chk_GhiNho.Size = new System.Drawing.Size(70, 19);
             this.chk_GhiNho.TabIndex = 6;
+            this.chk_GhiNho.CheckedChanged += new System.EventHandler(this.chk_GhiNho_CheckedChanged);
             // 
             // hyp_DangKy
             // 
@@ -158,6 +159,7 @@
             this.Controls.Add(this.btn_DN);
             this.Controls.Add(this.groupControl1);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);

@@ -11,7 +11,7 @@ namespace BUS_Fashion
     public class BUS_HangHoa
     {
         DAL_HangHoa dalhh = new DAL_HangHoa();
-        public DataTable getListHangHoa()
+        public List<HangHoa> getListHangHoa()
         {
             return dalhh.getHangHoa();
         }

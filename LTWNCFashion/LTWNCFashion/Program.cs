@@ -17,7 +17,8 @@ namespace LTWNCFashion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form_Main());
-            Application.Run(new Form_Main());
+            //Application.Run(new FrmNhaCC());
+            Application.Run(new FrmKhachHang());
             //Application.Run(new FrmKhachHang());
         }
         //public static Main main = null;

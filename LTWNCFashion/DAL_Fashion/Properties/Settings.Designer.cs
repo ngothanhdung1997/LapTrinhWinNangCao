@@ -55,5 +55,16 @@ namespace DAL_Fashion.Properties {
                 return ((string)(this["QL_SHOPConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-FR598GF\\SQLEXPRESS;Initial Catalog=QL_CHTT;Persist Security I" +
+            "nfo=True;User ID=sa;Password=huynhbao123")]
+        public string QL_CHTTConnectionString {
+            get {
+                return ((string)(this["QL_CHTTConnectionString"]));
+            }
+        }
     }
 }

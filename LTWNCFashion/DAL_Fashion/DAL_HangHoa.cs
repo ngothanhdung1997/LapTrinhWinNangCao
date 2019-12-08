@@ -1,31 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DTO_Fashion;
+using System.Drawing;
+using System.IO;
 namespace DAL_Fashion
 {
-    public class DAL_HangHoa:Context
+    public class DAL_HangHoa : Context
     {
-        public DataTable getHangHoa()
+        public List<HangHoa> getHangHoa()
         {
-            var hh = db.HangHoas.Select(t => t);
-            var resultTable = new DataTable();
-            bool firstPass = true;
-            foreach (var item in hh)
+            return db.HangHoas.Select(t => t).ToList<HangHoa>();
+            //var HH = (from hh in db.HangHoas
+            //          select new
+            //          {
+            //              MaHang = hh.MaHang,
+            //              MaThuongHieu = hh.MaThuongHieu,
+            //              MaLoai = hh.MaLoai,
+            //              TenHang = hh.TenHang,
+            //              DonGiaNhap = hh.DonGiaNhap,
+            //              DonGiaBan = hh.DonGiaBan,
+            //              SoluongTon = hh.SoluongTon,
+            //              DVT = hh.DVT,
+            //              MoTa = hh.MoTa,
+            //              HinhAnh = hh.HinhAnh
+            //          });
+            ////var hh = db.HangHoas.Select(t => t);
+            //var resultTable = new DataTable();
+            //bool firstPass = true;
+            //foreach (var item in HH)
+            //{
+            //    if (firstPass)
+            //    {
+            //        Array.ForEach(item.GetType().GetProperties(), p => resultTable.Columns.Add(new DataColumn(p.Name)));
+            //        firstPass = false;
+            //    }
+            //    var newRow = resultTable.NewRow();
+            //    Array.ForEach(item.GetType().GetProperties(), p => newRow[p.Name] = p.GetValue(item, null));
+            //    resultTable.Rows.Add(newRow);
+            //}
+            //return resultTable;
+        }
+        public Image ByteArrayToImage(byte[] byteArrayIn)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArrayIn))
             {
-                if (firstPass)
-                {
-                    Array.ForEach(item.GetType().GetProperties(), p => resultTable.Columns.Add(new DataColumn(p.Name)));
-                    firstPass = false;
-                }
-                var newRow = resultTable.NewRow();
-                Array.ForEach(item.GetType().GetProperties(), p => newRow[p.Name] = p.GetValue(item, null));
-                resultTable.Rows.Add(newRow);
+                Image returnImage = Image.FromStream(ms);
+                return returnImage;
             }
-            return resultTable;
         }
         //insert hang hoa
         public bool InsertHangHoa(DTO_HangHoa a)
@@ -33,14 +59,16 @@ namespace DAL_Fashion
             try
             {
                 HangHoa insert = new HangHoa();
+                Binary file_binary = new Binary(a.img);
                 insert.MaThuongHieu = a.MaThuongHieu;
                 insert.MaLoai = a.MaLoai;
                 insert.TenHang = a.TenHang;
-                insert.Dongia = a.Dongia;
+                insert.DonGiaNhap = a.DonGiaNhap;
+                insert.DonGiaBan = a.DonGiaBan;
                 insert.SoluongTon = a.SoluongTon;
                 insert.DVT = a.DVT;
                 insert.MoTa = a.MoTa;
-                insert.img = a.img;
+                insert.HinhAnh = file_binary;
                 db.HangHoas.InsertOnSubmit(insert);
                 db.SubmitChanges();
                 return true;
@@ -55,16 +83,17 @@ namespace DAL_Fashion
         {
             try
             {
-
-                HangHoa update = db.HangHoas.Where(p => p.MaHang.ToString().Equals(a.MaHang)).SingleOrDefault();
+                Binary file_binary = new Binary(a.img);
+                HangHoa update = db.HangHoas.Where(p => p.MaHang == a.MaHang).SingleOrDefault();
                 update.MaThuongHieu = a.MaThuongHieu;
                 update.MaLoai = a.MaLoai;
                 update.TenHang = a.TenHang;
-                update.Dongia = a.Dongia;
+                update.DonGiaNhap = a.DonGiaNhap;
+                update.DonGiaBan = a.DonGiaBan;
                 update.SoluongTon = a.SoluongTon;
                 update.DVT = a.DVT;
                 update.MoTa = a.MoTa;
-                update.img = a.img;
+                update.HinhAnh = file_binary;
                 db.SubmitChanges();
                 return true;
             }
@@ -78,7 +107,7 @@ namespace DAL_Fashion
         {
             try
             {
-                HangHoa delete = db.HangHoas.Where(p => p.MaHang.ToString().Equals(a.MaHang)).SingleOrDefault();
+                HangHoa delete = db.HangHoas.Where(p => p.MaHang == a.MaHang).SingleOrDefault();
                 db.HangHoas.DeleteOnSubmit(delete);
                 db.SubmitChanges();
                 return true;

@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BUS_Fashion;
 using DTO_Fashion;
+using System.IO;
+using DAL_Fashion;
+
 namespace LTWNCFashion
 {
     public partial class FrmNhanVien : DevExpress.XtraEditors.XtraForm
@@ -27,18 +30,17 @@ namespace LTWNCFashion
 
         private void LoadData()
         {
+            txtMaNV.Enabled = false;
             gdvNhanVien.DataSource = bsnv.getNhanVien();
-            cboNV.DataSource = bsnv.getNhanVien();
-            cboNV.DisplayMember = "TenNV";
-            cboNV.ValueMember = "MaNV";
         }
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
             try
             {
-                DTO_NhanVien nv = new DTO_NhanVien(cboNV.Text, cboNV.Text, cboGT.Text,
-                   dateNgaySinh.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text,dateNVLam.Text);
+                byte[] b = ImageToByteArray(pct_NV.Image);
+                DTO_NhanVien nv = new DTO_NhanVien(txtTNV.Text, cboGT.Text,DateTime.Parse(dateNgaySinh.EditValue.ToString()),
+                    txtDiaChi.Text, txtSDT.Text, txtEmail.Text,DateTime.Parse(dateNVLam.EditValue.ToString()), b);
                 bsnv.InsertNhanVien(nv);
                 XtraMessageBox.Show("Thêm thành công.");
                 LoadData();
@@ -53,9 +55,10 @@ namespace LTWNCFashion
         {
             try
             {
-                DTO_NhanVien nv = new DTO_NhanVien(cboNV.SelectedValue.ToString());
+                int manv = int.Parse(txtMaNV.Text);
+                DTO_NhanVien nv = new DTO_NhanVien(manv);
                 bsnv.DeleteNhanVien(nv);
-                XtraMessageBox.Show("Thêm thành công.");
+                XtraMessageBox.Show("Xóa thành công.");
                 LoadData();
             }
             catch
@@ -69,8 +72,9 @@ namespace LTWNCFashion
         {
             try
             {
-                DTO_NhanVien nv = new DTO_NhanVien(cboNV.SelectedValue.ToString(), cboNV.Text, cboGT.Text,
-                   dateNgaySinh.Text, txtDiaChi.Text, txtSDT.Text, txtEmail.Text, dateNVLam.Text);
+                byte[] b = ImageToByteArray(pct_NV.Image);
+                DTO_NhanVien nv = new DTO_NhanVien(int.Parse(txtMaNV.Text), txtTNV.Text, cboGT.Text,DateTime.Parse(dateNgaySinh.EditValue.ToString()),
+                    txtDiaChi.Text, txtSDT.Text, txtEmail.Text, DateTime.Parse(dateNVLam.EditValue.ToString()), b);
                 bsnv.UpdateNhanVien(nv);
                 XtraMessageBox.Show("Sửa thành công.");
                 LoadData();
@@ -85,18 +89,65 @@ namespace LTWNCFashion
         {
             try
             {
-                string manv = gdvNhanVien.CurrentRow.Cells["MaNV"].Value.ToString();
-                cboNV.DataSource = bsnv.getNhanVientheoma(manv);
-                cboNV.DisplayMember = "TenNV";
+                txtMaNV.Text = gdvNhanVien.CurrentRow.Cells["MaNV"].Value.ToString();
+                txtTNV.Text = gdvNhanVien.CurrentRow.Cells["TenNV"].Value.ToString(); 
                 cboGT.Text = gdvNhanVien.CurrentRow.Cells["Gioitinh"].Value.ToString();
                 dateNgaySinh.Text = gdvNhanVien.CurrentRow.Cells["Ngaysinh"].Value.ToString();
                 txtDiaChi.Text = gdvNhanVien.CurrentRow.Cells["Diachi"].Value.ToString();
                 txtSDT.Text = gdvNhanVien.CurrentRow.Cells["Sdt"].Value.ToString();
                 txtEmail.Text = gdvNhanVien.CurrentRow.Cells["Email"].Value.ToString();
                 dateNVLam.Text = gdvNhanVien.CurrentRow.Cells["Ngayvaolam"].Value.ToString();
+                int manv = int.Parse(gdvNhanVien.CurrentRow.Cells["MaNV"].Value.ToString());
+                CellClick_MaNV(manv);
             }
             catch
-            { return; } 
+            { return; }
+        }
+        QL_SHOPDataContext db = new QL_SHOPDataContext();
+        private void CellClick_MaNV(int manv)
+        {
+            var s = (from st in db.NhanViens where st.MaNV == manv  select st.ImageNV.ToArray()).First();
+            pct_NV.Image = ByteArrayToImage(s);
+        }
+        public Image ByteArrayToImage(byte[] byteArrayIn)
+        {
+            using (MemoryStream ms = new MemoryStream(byteArrayIn))
+            {
+                Image returnImage = Image.FromStream(ms);
+                return returnImage;
+            }
+        }
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn đóng?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Close();
+                FrmNhanVien f = new FrmNhanVien();
+                f.Refresh();
+            }
+        }
+        //Chuyen Image sang byte[] 
+        private byte[] ImageToByteArray(Image img)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+                return ms.ToArray();
+            }
+        }
+
+        private void pct_NV_DoubleClick(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            PictureBox p = sender as PictureBox;
+            if (p != null)
+            {
+                open.Filter = "(*.jpg;*.jpeg;*.bmp) | *.jpg;*.jpeg;*.bmp";
+                if (open.ShowDialog() == DialogResult.OK)
+                {
+                    p.Image = Image.FromFile(open.FileName);
+                }
+            }
         }
     }
 }

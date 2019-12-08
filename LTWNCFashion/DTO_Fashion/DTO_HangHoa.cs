@@ -3,22 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace DTO_Fashion
 {
     public class DTO_HangHoa
     {
-        private string _MaH;
+        private int _MaH;
         private int _MaTH;
         private int _MaL;
         private string _TenH;
-        private int _DonG;
+        private int _DonGiaNhap;
+        private int _DonGiaBan;
         private int _SoL;
         private string _DVT;
         private string _MoTa;
-        private string _img;
+        private Byte[] _img;
 
-        public string MaHang
+        public int MaHang
         {
             get { return _MaH; }
             set { _MaH = value; }
@@ -38,11 +39,6 @@ namespace DTO_Fashion
             get { return _TenH; }
             set { _TenH = value; }
         }
-        public int Dongia
-        {
-            get { return _DonG; }
-            set { _DonG = value; }
-        }
         public int SoluongTon
         {
             get { return _SoL; }
@@ -58,26 +54,43 @@ namespace DTO_Fashion
             get { return _MoTa; }
             set { _MoTa = value; }
         }
-        public string img
+        public byte[] img
         {
             get { return _img; }
             set { _img = value; }
         }
-        //insert and update
-        public DTO_HangHoa(string mah, int math, int mal, string tenh, int dongia, int soluong, string dvt, string mota, string img)
+
+        public int DonGiaNhap { get => _DonGiaNhap; set => _DonGiaNhap = value; }
+        public int DonGiaBan { get => _DonGiaBan; set => _DonGiaBan = value; }
+        //insert
+        public DTO_HangHoa(int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img)
+        {
+            this.MaThuongHieu = math;
+            this.MaLoai = mal;
+            this.TenHang = tenh;
+            this.DonGiaNhap = dongianhap;
+            this.DonGiaBan = dongiaban;
+            this.SoluongTon = soluong;
+            this.DVT = dvt;
+            this.MoTa = mota;
+            this.img = img;
+        }
+        //update
+        public DTO_HangHoa(int mah, int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img)
         {
             this.MaHang = mah;
             this.MaThuongHieu = math;
             this.MaLoai = mal;
             this.TenHang = tenh;
-            this.Dongia = dongia;
+            this.DonGiaNhap = dongianhap;
+            this.DonGiaBan = dongiaban;
             this.SoluongTon = soluong;
             this.DVT = dvt;
             this.MoTa = mota;
             this.img = img;
         }
         //delete
-        public DTO_HangHoa(string mah)
+        public DTO_HangHoa(int mah)
         {
             this.MaHang = mah;
         }

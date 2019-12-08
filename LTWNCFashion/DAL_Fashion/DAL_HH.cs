@@ -12,6 +12,21 @@ namespace DAL_Fashion
         {
             return db.HangHoas.Select(t => t).ToList<HangHoa>();
         }
+        //Update lai so luong ton
+        public void Updatesoluonggiam(int pMaH, int soluong)
+        {
+            HangHoa hh = new HangHoa();
+            hh = db.HangHoas.Where(t => t.MaHang == pMaH).FirstOrDefault();
+            hh.SoluongTon = hh.SoluongTon - soluong;
+            db.SubmitChanges();
+        }
+        public void Updatesoluongtang(int pMaH, int soluong)
+        {
+            HangHoa hh = new HangHoa();
+            hh = db.HangHoas.Where(t => t.MaHang == pMaH).FirstOrDefault();
+            hh.SoluongTon = hh.SoluongTon + soluong;
+            db.SubmitChanges();
+        }
         public List<HangHoa> getGiaBan(string pMaH)
         {
             return db.HangHoas.Where(t => t.MaHang == int.Parse(pMaH)).ToList<HangHoa>();

@@ -21,5 +21,10 @@ namespace LTWNCFashion
         {
             this.Close();
         }
+
+        private void chk_GhiNho_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -86,12 +86,12 @@ namespace DAL_Fashion
         {
             try
             {
-                CT_HD insert = new CT_HD();
-                insert.MaHD = int.Parse(a.MaHD);
-                insert.MaHang = int.Parse(a.MaH);
-                insert.SLBan = int.Parse(a.SLBan);
-                insert.GiaBan = int.Parse(a.GiaBan);
-                insert.ThanhTien = int.Parse(a.ThanhTien); 
+                CT_HD insert = new CT_HD(); 
+                insert.MaHD = a.MaHD;
+                insert.MaHang = a.MaH;
+                insert.SLBan = a.SLBan;
+                insert.GiaBan = a.GiaBan;
+                insert.ThanhTien = a.ThanhTien; 
                 db.CT_HDs.InsertOnSubmit(insert);
                 db.SubmitChanges();
                 return true;
@@ -106,10 +106,10 @@ namespace DAL_Fashion
         {
             try
             {
-                CT_HD update = db.CT_HDs.Where(p => p.MaHD.ToString().Equals(a.MaHD) && p.MaHang.ToString().Equals(a.MaH)).SingleOrDefault(); 
-                update.SLBan = int.Parse(a.SLBan);
-                update.GiaBan = int.Parse(a.GiaBan);
-                update.ThanhTien = int.Parse(a.ThanhTien);
+                CT_HD update = db.CT_HDs.Where(p => p.MaHD == a.MaHD && p.MaHang == a.MaH).SingleOrDefault(); 
+                update.SLBan = a.SLBan;
+                update.GiaBan = a.GiaBan;
+                update.ThanhTien = a.ThanhTien;
                 db.SubmitChanges();
                 return true;
             }
@@ -123,7 +123,7 @@ namespace DAL_Fashion
         {
             try
             {
-                CT_HD delete = db.CT_HDs.Where(p => p.MaHD.ToString().Equals(a.MaHD) && p.MaHang.ToString().Equals(a.MaH)).SingleOrDefault();
+                CT_HD delete = db.CT_HDs.Where(p => p.MaHD == a.MaHD && p.MaHang == a.MaH).SingleOrDefault();
                 db.CT_HDs.DeleteOnSubmit(delete);
                 db.SubmitChanges();
                 return true;
@@ -161,7 +161,7 @@ namespace DAL_Fashion
         {
             try
             {
-                HoaDon update = db.HoaDons.Where(p => p.MaHD.ToString().Equals(a.MaHD)).SingleOrDefault();
+                HoaDon update = db.HoaDons.Where(p => p.MaHD== int.Parse(a.MaHD)).SingleOrDefault();
                 update.MaNV = int.Parse(a.MaNV);
                 update.MaKH = int.Parse(a.MaKH);
                 update.TongTien = int.Parse(a.TongTien);
@@ -181,7 +181,7 @@ namespace DAL_Fashion
         {
             try
             {
-                HoaDon delete = db.HoaDons.Where(p => p.MaHD.ToString().Equals(a.MaHD)).SingleOrDefault();
+                HoaDon delete = db.HoaDons.Where(p => p.MaHD==int.Parse(a.MaHD)).SingleOrDefault();
                 db.HoaDons.DeleteOnSubmit(delete);
                 db.SubmitChanges();
                 return true;

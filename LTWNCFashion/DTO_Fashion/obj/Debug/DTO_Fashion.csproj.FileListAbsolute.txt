@@ -7,4 +7,13 @@ G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
 G:\LTWNC\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
 G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
-G:\LTWNC\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+C:\Users\hoaib\Desktop\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+C:\Users\hoaib\Desktop\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+C:\Users\hoaib\Desktop\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+C:\Users\hoaib\Desktop\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+C:\Users\hoaib\Desktop\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
+G:\DownLoad\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+G:\DownLoad\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+G:\DownLoad\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+G:\DownLoad\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+G:\DownLoad\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb

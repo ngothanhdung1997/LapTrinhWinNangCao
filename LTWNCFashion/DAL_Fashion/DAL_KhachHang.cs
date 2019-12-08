@@ -70,7 +70,7 @@ namespace DAL_Fashion
         {
             try
             {
-                KhachHang delete = db.KhachHangs.Where(p => p.MaKH.ToString().Equals(a.MaKH)).SingleOrDefault();
+                KhachHang delete = db.KhachHangs.Where(p => p.MaKH == int.Parse(a.MaKH)).SingleOrDefault();
                 db.KhachHangs.DeleteOnSubmit(delete);
                 db.SubmitChanges();
                 return true;

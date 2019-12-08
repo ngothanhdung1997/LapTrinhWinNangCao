@@ -142,6 +142,7 @@
             this.Controls.Add(this.cboDt);
             this.Controls.Add(this.cbosv);
             this.Name = "CauHinh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CauHinh";
             this.ResumeLayout(false);
             this.PerformLayout();
