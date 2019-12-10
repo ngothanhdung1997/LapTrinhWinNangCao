@@ -32,32 +32,6 @@
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gdvNhanVien = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
-            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.txtMaNV = new DevExpress.XtraEditors.TextEdit();
-            this.txtTNV = new DevExpress.XtraEditors.TextEdit();
-            this.cboGT = new System.Windows.Forms.ComboBox();
-            this.dateNgaySinh = new DevExpress.XtraEditors.DateEdit();
-            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.txtSDT = new DevExpress.XtraEditors.TextEdit();
-            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
-            this.dateNVLam = new DevExpress.XtraEditors.DateEdit();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gioitinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,6 +41,32 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngayvaolam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ImageNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLuu = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSua = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
+            this.dateNgaySinh = new DevExpress.XtraEditors.DateEdit();
+            this.cboGT = new System.Windows.Forms.ComboBox();
+            this.txtTNV = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtMaNV = new DevExpress.XtraEditors.TextEdit();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.dateNVLam = new DevExpress.XtraEditors.DateEdit();
+            this.txtEmail = new DevExpress.XtraEditors.TextEdit();
+            this.txtSDT = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.pct_NV = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
@@ -77,16 +77,16 @@
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTNV.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTNV.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).BeginInit();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNVLam.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNVLam.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct_NV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,6 +140,60 @@
             this.gdvNhanVien.Size = new System.Drawing.Size(1125, 281);
             this.gdvNhanVien.TabIndex = 0;
             this.gdvNhanVien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdvNhanVien_CellClick);
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã NV";
+            this.MaNV.Name = "MaNV";
+            // 
+            // TenNV
+            // 
+            this.TenNV.DataPropertyName = "TenNV";
+            this.TenNV.HeaderText = "Tên NV";
+            this.TenNV.Name = "TenNV";
+            // 
+            // Gioitinh
+            // 
+            this.Gioitinh.DataPropertyName = "Gioitinh";
+            this.Gioitinh.HeaderText = "Giới Tính";
+            this.Gioitinh.Name = "Gioitinh";
+            // 
+            // Ngaysinh
+            // 
+            this.Ngaysinh.DataPropertyName = "Ngaysinh";
+            this.Ngaysinh.HeaderText = "Ngày Sinh";
+            this.Ngaysinh.Name = "Ngaysinh";
+            // 
+            // Diachi
+            // 
+            this.Diachi.DataPropertyName = "Diachi";
+            this.Diachi.HeaderText = "Địa Chỉ";
+            this.Diachi.Name = "Diachi";
+            // 
+            // Sdt
+            // 
+            this.Sdt.DataPropertyName = "Sdt";
+            this.Sdt.HeaderText = "SĐT";
+            this.Sdt.Name = "Sdt";
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // Ngayvaolam
+            // 
+            this.Ngayvaolam.DataPropertyName = "Ngayvaolam";
+            this.Ngayvaolam.HeaderText = "Ngày Vào Làm";
+            this.Ngayvaolam.Name = "Ngayvaolam";
+            // 
+            // ImageNV
+            // 
+            this.ImageNV.HeaderText = "HinhAnh";
+            this.ImageNV.Name = "ImageNV";
+            this.ImageNV.Visible = false;
             // 
             // tableLayoutPanel2
             // 
@@ -250,7 +304,7 @@
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 165F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(1119, 165);
             this.tableLayoutPanel4.TabIndex = 4;
             // 
@@ -282,6 +336,69 @@
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(450, 159);
             this.tableLayoutPanel6.TabIndex = 0;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDiaChi.Location = new System.Drawing.Point(103, 123);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
+            this.txtDiaChi.Size = new System.Drawing.Size(343, 22);
+            this.txtDiaChi.TabIndex = 10;
+            // 
+            // dateNgaySinh
+            // 
+            this.dateNgaySinh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateNgaySinh.EditValue = null;
+            this.dateNgaySinh.Location = new System.Drawing.Point(103, 94);
+            this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(4);
+            this.dateNgaySinh.Name = "dateNgaySinh";
+            this.dateNgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateNgaySinh.Properties.Appearance.Options.UseFont = true;
+            this.dateNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNgaySinh.Size = new System.Drawing.Size(343, 22);
+            this.dateNgaySinh.TabIndex = 13;
+            // 
+            // cboGT
+            // 
+            this.cboGT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cboGT.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboGT.FormattingEnabled = true;
+            this.cboGT.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cboGT.Location = new System.Drawing.Point(103, 63);
+            this.cboGT.Margin = new System.Windows.Forms.Padding(4);
+            this.cboGT.Name = "cboGT";
+            this.cboGT.Size = new System.Drawing.Size(343, 24);
+            this.cboGT.TabIndex = 9;
+            // 
+            // txtTNV
+            // 
+            this.txtTNV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTNV.Location = new System.Drawing.Point(102, 30);
+            this.txtTNV.Name = "txtTNV";
+            this.txtTNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTNV.Properties.Appearance.Options.UseFont = true;
+            this.txtTNV.Size = new System.Drawing.Size(345, 22);
+            this.txtTNV.TabIndex = 15;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl4.Location = new System.Drawing.Point(4, 123);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(91, 32);
+            this.labelControl4.TabIndex = 20;
+            this.labelControl4.Text = "Địa Chỉ";
             // 
             // labelControl8
             // 
@@ -331,18 +448,6 @@
             this.labelControl3.TabIndex = 19;
             this.labelControl3.Text = "Ngày Sinh";
             // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl4.Location = new System.Drawing.Point(4, 123);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(91, 32);
-            this.labelControl4.TabIndex = 20;
-            this.labelControl4.Text = "Địa Chỉ";
-            // 
             // txtMaNV
             // 
             this.txtMaNV.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -352,57 +457,7 @@
             this.txtMaNV.Properties.Appearance.Options.UseFont = true;
             this.txtMaNV.Size = new System.Drawing.Size(345, 22);
             this.txtMaNV.TabIndex = 21;
-            // 
-            // txtTNV
-            // 
-            this.txtTNV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTNV.Location = new System.Drawing.Point(102, 30);
-            this.txtTNV.Name = "txtTNV";
-            this.txtTNV.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTNV.Properties.Appearance.Options.UseFont = true;
-            this.txtTNV.Size = new System.Drawing.Size(345, 22);
-            this.txtTNV.TabIndex = 15;
-            // 
-            // cboGT
-            // 
-            this.cboGT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cboGT.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboGT.FormattingEnabled = true;
-            this.cboGT.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cboGT.Location = new System.Drawing.Point(103, 63);
-            this.cboGT.Margin = new System.Windows.Forms.Padding(4);
-            this.cboGT.Name = "cboGT";
-            this.cboGT.Size = new System.Drawing.Size(343, 24);
-            this.cboGT.TabIndex = 9;
-            // 
-            // dateNgaySinh
-            // 
-            this.dateNgaySinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateNgaySinh.EditValue = null;
-            this.dateNgaySinh.Location = new System.Drawing.Point(103, 94);
-            this.dateNgaySinh.Margin = new System.Windows.Forms.Padding(4);
-            this.dateNgaySinh.Name = "dateNgaySinh";
-            this.dateNgaySinh.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNgaySinh.Properties.Appearance.Options.UseFont = true;
-            this.dateNgaySinh.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateNgaySinh.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateNgaySinh.Size = new System.Drawing.Size(343, 22);
-            this.dateNgaySinh.TabIndex = 13;
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDiaChi.Location = new System.Drawing.Point(103, 123);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Properties.Appearance.Options.UseFont = true;
-            this.txtDiaChi.Size = new System.Drawing.Size(343, 22);
-            this.txtDiaChi.TabIndex = 10;
+            this.txtMaNV.EditValueChanged += new System.EventHandler(this.txtMaNV_EditValueChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -425,64 +480,6 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(405, 96);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl5.Location = new System.Drawing.Point(4, 4);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(86, 27);
-            this.labelControl5.TabIndex = 5;
-            this.labelControl5.Text = "Số Điện Thoại";
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl6.Location = new System.Drawing.Point(4, 39);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(86, 22);
-            this.labelControl6.TabIndex = 6;
-            this.labelControl6.Text = "Email";
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl7.Location = new System.Drawing.Point(4, 69);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(4);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(86, 23);
-            this.labelControl7.TabIndex = 7;
-            this.labelControl7.Text = "Ngày Vào Làm";
-            // 
-            // txtSDT
-            // 
-            this.txtSDT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtSDT.Location = new System.Drawing.Point(98, 4);
-            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSDT.Properties.Appearance.Options.UseFont = true;
-            this.txtSDT.Size = new System.Drawing.Size(303, 22);
-            this.txtSDT.TabIndex = 11;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtEmail.Location = new System.Drawing.Point(98, 39);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Properties.Appearance.Options.UseFont = true;
-            this.txtEmail.Size = new System.Drawing.Size(303, 22);
-            this.txtEmail.TabIndex = 12;
-            // 
             // dateNVLam
             // 
             this.dateNVLam.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -499,59 +496,63 @@
             this.dateNVLam.Size = new System.Drawing.Size(303, 22);
             this.dateNVLam.TabIndex = 14;
             // 
-            // MaNV
+            // txtEmail
             // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã NV";
-            this.MaNV.Name = "MaNV";
+            this.txtEmail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtEmail.Location = new System.Drawing.Point(98, 39);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Properties.Appearance.Options.UseFont = true;
+            this.txtEmail.Size = new System.Drawing.Size(303, 22);
+            this.txtEmail.TabIndex = 12;
             // 
-            // TenNV
+            // txtSDT
             // 
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên NV";
-            this.TenNV.Name = "TenNV";
+            this.txtSDT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtSDT.Location = new System.Drawing.Point(98, 4);
+            this.txtSDT.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSDT.Name = "txtSDT";
+            this.txtSDT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSDT.Properties.Appearance.Options.UseFont = true;
+            this.txtSDT.Size = new System.Drawing.Size(303, 22);
+            this.txtSDT.TabIndex = 11;
             // 
-            // Gioitinh
+            // labelControl7
             // 
-            this.Gioitinh.DataPropertyName = "Gioitinh";
-            this.Gioitinh.HeaderText = "Giới Tính";
-            this.Gioitinh.Name = "Gioitinh";
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl7.Location = new System.Drawing.Point(4, 69);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(86, 23);
+            this.labelControl7.TabIndex = 7;
+            this.labelControl7.Text = "Ngày Vào Làm";
             // 
-            // Ngaysinh
+            // labelControl6
             // 
-            this.Ngaysinh.DataPropertyName = "Ngaysinh";
-            this.Ngaysinh.HeaderText = "Ngày Sinh";
-            this.Ngaysinh.Name = "Ngaysinh";
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl6.Appearance.Options.UseFont = true;
+            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl6.Location = new System.Drawing.Point(4, 39);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(86, 22);
+            this.labelControl6.TabIndex = 6;
+            this.labelControl6.Text = "Email";
             // 
-            // Diachi
+            // labelControl5
             // 
-            this.Diachi.DataPropertyName = "Diachi";
-            this.Diachi.HeaderText = "Địa Chỉ";
-            this.Diachi.Name = "Diachi";
-            // 
-            // Sdt
-            // 
-            this.Sdt.DataPropertyName = "Sdt";
-            this.Sdt.HeaderText = "SĐT";
-            this.Sdt.Name = "Sdt";
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            // 
-            // Ngayvaolam
-            // 
-            this.Ngayvaolam.DataPropertyName = "Ngayvaolam";
-            this.Ngayvaolam.HeaderText = "Ngày Vào Làm";
-            this.Ngayvaolam.Name = "Ngayvaolam";
-            // 
-            // ImageNV
-            // 
-            this.ImageNV.HeaderText = "HinhAnh";
-            this.ImageNV.Name = "ImageNV";
-            this.ImageNV.Visible = false;
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl5.Location = new System.Drawing.Point(4, 4);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(86, 27);
+            this.labelControl5.TabIndex = 5;
+            this.labelControl5.Text = "Số Điện Thoại";
             // 
             // pct_NV
             // 
@@ -588,17 +589,17 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTNV.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNgaySinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTNV.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMaNV.Properties)).EndInit();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNVLam.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNVLam.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtSDT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pct_NV)).EndInit();
             this.ResumeLayout(false);
 

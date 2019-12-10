@@ -98,5 +98,10 @@ namespace LTWNCFashion
             txtMatl.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtTentl.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
+
+        private void tableLayoutPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -244,7 +244,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.21622F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 276F));
             this.tableLayoutPanel3.Controls.Add(this.btn_Them, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_Xoa, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.btn_Luu, 6, 0);
@@ -265,7 +265,7 @@
             this.btn_Them.Appearance.Options.UseFont = true;
             this.btn_Them.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_Them.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Them.ImageOptions.Image")));
-            this.btn_Them.Location = new System.Drawing.Point(150, 4);
+            this.btn_Them.Location = new System.Drawing.Point(149, 4);
             this.btn_Them.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Them.Name = "btn_Them";
             this.btn_Them.Size = new System.Drawing.Size(100, 48);
@@ -279,7 +279,7 @@
             this.btn_Xoa.Appearance.Options.UseFont = true;
             this.btn_Xoa.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_Xoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Xoa.ImageOptions.Image")));
-            this.btn_Xoa.Location = new System.Drawing.Point(370, 4);
+            this.btn_Xoa.Location = new System.Drawing.Point(368, 4);
             this.btn_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(105, 48);
@@ -293,7 +293,7 @@
             this.btn_Luu.Appearance.Options.UseFont = true;
             this.btn_Luu.Dock = System.Windows.Forms.DockStyle.Left;
             this.btn_Luu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Luu.ImageOptions.Image")));
-            this.btn_Luu.Location = new System.Drawing.Point(863, 4);
+            this.btn_Luu.Location = new System.Drawing.Point(859, 4);
             this.btn_Luu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(100, 48);
@@ -307,7 +307,7 @@
             this.btn_Sua.Appearance.Options.UseFont = true;
             this.btn_Sua.Dock = System.Windows.Forms.DockStyle.Right;
             this.btn_Sua.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_Sua.ImageOptions.Image")));
-            this.btn_Sua.Location = new System.Drawing.Point(663, 4);
+            this.btn_Sua.Location = new System.Drawing.Point(659, 4);
             this.btn_Sua.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(97, 48);
@@ -321,7 +321,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.94839F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.71075F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 35.35229F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel5, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.tableLayoutPanel6, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.pct_HinhAnh, 1, 0);
@@ -342,7 +342,7 @@
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.19743F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.80257F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tableLayoutPanel5.Controls.Add(this.labelControl10, 0, 5);
             this.tableLayoutPanel5.Controls.Add(this.cboLoai, 1, 3);
             this.tableLayoutPanel5.Controls.Add(this.txtTenHang, 1, 1);
@@ -367,7 +367,7 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 33F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(384, 224);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(383, 224);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // labelControl10
@@ -386,20 +386,20 @@
             this.cboLoai.Dock = System.Windows.Forms.DockStyle.Top;
             this.cboLoai.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboLoai.FormattingEnabled = true;
-            this.cboLoai.Location = new System.Drawing.Point(131, 122);
+            this.cboLoai.Location = new System.Drawing.Point(130, 122);
             this.cboLoai.Name = "cboLoai";
-            this.cboLoai.Size = new System.Drawing.Size(201, 24);
+            this.cboLoai.Size = new System.Drawing.Size(199, 24);
             this.cboLoai.TabIndex = 9;
             this.cboLoai.Click += new System.EventHandler(this.cboLoai_Click);
             // 
             // txtTenHang
             // 
             this.txtTenHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtTenHang.Location = new System.Drawing.Point(131, 39);
+            this.txtTenHang.Location = new System.Drawing.Point(130, 39);
             this.txtTenHang.Name = "txtTenHang";
             this.txtTenHang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenHang.Properties.Appearance.Options.UseFont = true;
-            this.txtTenHang.Size = new System.Drawing.Size(201, 22);
+            this.txtTenHang.Size = new System.Drawing.Size(199, 22);
             this.txtTenHang.TabIndex = 6;
             // 
             // labelControl1
@@ -460,21 +460,21 @@
             // txtMaHang
             // 
             this.txtMaHang.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtMaHang.Location = new System.Drawing.Point(131, 3);
+            this.txtMaHang.Location = new System.Drawing.Point(130, 3);
             this.txtMaHang.Name = "txtMaHang";
             this.txtMaHang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaHang.Properties.Appearance.Options.UseFont = true;
-            this.txtMaHang.Size = new System.Drawing.Size(201, 22);
+            this.txtMaHang.Size = new System.Drawing.Size(199, 22);
             this.txtMaHang.TabIndex = 5;
             // 
             // txtGiaNhap
             // 
             this.txtGiaNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtGiaNhap.Location = new System.Drawing.Point(131, 161);
+            this.txtGiaNhap.Location = new System.Drawing.Point(130, 161);
             this.txtGiaNhap.Name = "txtGiaNhap";
             this.txtGiaNhap.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaNhap.Properties.Appearance.Options.UseFont = true;
-            this.txtGiaNhap.Size = new System.Drawing.Size(201, 22);
+            this.txtGiaNhap.Size = new System.Drawing.Size(199, 22);
             this.txtGiaNhap.TabIndex = 7;
             // 
             // cboTH
@@ -482,18 +482,18 @@
             this.cboTH.Dock = System.Windows.Forms.DockStyle.Top;
             this.cboTH.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTH.FormattingEnabled = true;
-            this.cboTH.Location = new System.Drawing.Point(131, 80);
+            this.cboTH.Location = new System.Drawing.Point(130, 80);
             this.cboTH.Name = "cboTH";
-            this.cboTH.Size = new System.Drawing.Size(201, 24);
+            this.cboTH.Size = new System.Drawing.Size(199, 24);
             this.cboTH.TabIndex = 8;
             this.cboTH.Click += new System.EventHandler(this.cboTH_Click);
             // 
             // btnThemthhieu
             // 
             this.btnThemthhieu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemthhieu.Location = new System.Drawing.Point(338, 86);
+            this.btnThemthhieu.Location = new System.Drawing.Point(335, 86);
             this.btnThemthhieu.Name = "btnThemthhieu";
-            this.btnThemthhieu.Size = new System.Drawing.Size(43, 23);
+            this.btnThemthhieu.Size = new System.Drawing.Size(45, 23);
             this.btnThemthhieu.TabIndex = 10;
             this.btnThemthhieu.Text = "...";
             this.btnThemthhieu.Click += new System.EventHandler(this.btnThemthhieu_Click);
@@ -501,9 +501,9 @@
             // btnThemloai
             // 
             this.btnThemloai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemloai.Location = new System.Drawing.Point(338, 125);
+            this.btnThemloai.Location = new System.Drawing.Point(335, 125);
             this.btnThemloai.Name = "btnThemloai";
-            this.btnThemloai.Size = new System.Drawing.Size(43, 23);
+            this.btnThemloai.Size = new System.Drawing.Size(45, 23);
             this.btnThemloai.TabIndex = 11;
             this.btnThemloai.Text = "...";
             this.btnThemloai.Click += new System.EventHandler(this.btnThemloai_Click);
@@ -512,10 +512,10 @@
             // 
             this.txtDonGiaBan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtDonGiaBan.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDonGiaBan.Location = new System.Drawing.Point(132, 194);
+            this.txtDonGiaBan.Location = new System.Drawing.Point(131, 194);
             this.txtDonGiaBan.Margin = new System.Windows.Forms.Padding(4);
             this.txtDonGiaBan.Name = "txtDonGiaBan";
-            this.txtDonGiaBan.Size = new System.Drawing.Size(199, 23);
+            this.txtDonGiaBan.Size = new System.Drawing.Size(197, 23);
             this.txtDonGiaBan.TabIndex = 13;
             // 
             // tableLayoutPanel6
@@ -530,14 +530,14 @@
             this.tableLayoutPanel6.Controls.Add(this.txtMoTa, 1, 2);
             this.tableLayoutPanel6.Controls.Add(this.cboDVT, 1, 1);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel6.Location = new System.Drawing.Point(651, 3);
+            this.tableLayoutPanel6.Location = new System.Drawing.Point(649, 3);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 4;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.68493F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.31507F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 117F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(348, 224);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(347, 224);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // labelControl6
@@ -576,7 +576,7 @@
             // txtSLT
             // 
             this.txtSLT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtSLT.Location = new System.Drawing.Point(116, 3);
+            this.txtSLT.Location = new System.Drawing.Point(115, 3);
             this.txtSLT.Name = "txtSLT";
             this.txtSLT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSLT.Properties.Appearance.Options.UseFont = true;
@@ -586,7 +586,7 @@
             // txtMoTa
             // 
             this.txtMoTa.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txtMoTa.Location = new System.Drawing.Point(116, 78);
+            this.txtMoTa.Location = new System.Drawing.Point(115, 78);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMoTa.Properties.Appearance.Options.UseFont = true;
@@ -601,7 +601,7 @@
             this.cboDVT.Items.AddRange(new object[] {
             "Cái",
             "Cặp"});
-            this.cboDVT.Location = new System.Drawing.Point(116, 41);
+            this.cboDVT.Location = new System.Drawing.Point(115, 41);
             this.cboDVT.Name = "cboDVT";
             this.cboDVT.Size = new System.Drawing.Size(229, 24);
             this.cboDVT.TabIndex = 7;
@@ -610,9 +610,9 @@
             // 
             this.pct_HinhAnh.BackColor = System.Drawing.Color.White;
             this.pct_HinhAnh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pct_HinhAnh.Location = new System.Drawing.Point(393, 3);
+            this.pct_HinhAnh.Location = new System.Drawing.Point(392, 3);
             this.pct_HinhAnh.Name = "pct_HinhAnh";
-            this.pct_HinhAnh.Size = new System.Drawing.Size(252, 224);
+            this.pct_HinhAnh.Size = new System.Drawing.Size(251, 224);
             this.pct_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pct_HinhAnh.TabIndex = 8;
             this.pct_HinhAnh.TabStop = false;

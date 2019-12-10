@@ -131,6 +131,30 @@
     <Compile Include="FrmThuongHieu.Designer.cs">
       <DependentUpon>FrmThuongHieu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_KhachHang.Designer.cs">
+      <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NhaCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_NhaCC.Designer.cs">
+      <DependentUpon>Frm_NhaCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TheLoai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TheLoai.Designer.cs">
+      <DependentUpon>Frm_TheLoai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_ThuongHieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_ThuongHieu.Designer.cs">
+      <DependentUpon>Frm_ThuongHieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="FromHangHoa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +205,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThuongHieu.resx">
       <DependentUpon>FrmThuongHieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_KhachHang.resx">
+      <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_NhaCC.resx">
+      <DependentUpon>Frm_NhaCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TheLoai.resx">
+      <DependentUpon>Frm_TheLoai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_ThuongHieu.resx">
+      <DependentUpon>Frm_ThuongHieu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FromHangHoa.resx">
       <DependentUpon>FromHangHoa.cs</DependentUpon>

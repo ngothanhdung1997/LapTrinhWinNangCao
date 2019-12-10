@@ -133,7 +133,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.16129F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 389F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 350F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 351F));
             this.tableLayoutPanel1.Controls.Add(this.labelControl10, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.labelControl1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.labelControl2, 0, 1);
@@ -165,7 +165,7 @@
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelControl10.Location = new System.Drawing.Point(643, 131);
+            this.labelControl10.Location = new System.Drawing.Point(642, 131);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(58, 16);
             this.labelControl10.TabIndex = 7;
@@ -198,7 +198,7 @@
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelControl5.Location = new System.Drawing.Point(643, 3);
+            this.labelControl5.Location = new System.Drawing.Point(642, 3);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(58, 16);
             this.labelControl5.TabIndex = 4;
@@ -209,7 +209,7 @@
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelControl6.Location = new System.Drawing.Point(649, 42);
+            this.labelControl6.Location = new System.Drawing.Point(648, 42);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(52, 16);
             this.labelControl6.TabIndex = 5;
@@ -220,7 +220,7 @@
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl7.Appearance.Options.UseFont = true;
             this.labelControl7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelControl7.Location = new System.Drawing.Point(631, 86);
+            this.labelControl7.Location = new System.Drawing.Point(630, 86);
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(70, 16);
             this.labelControl7.TabIndex = 6;
@@ -230,13 +230,13 @@
             // 
             this.dateEdit1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateEdit1.EditValue = null;
-            this.dateEdit1.Location = new System.Drawing.Point(707, 42);
+            this.dateEdit1.Location = new System.Drawing.Point(706, 42);
             this.dateEdit1.Name = "dateEdit1";
             this.dateEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateEdit1.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateEdit1.Size = new System.Drawing.Size(345, 20);
+            this.dateEdit1.Size = new System.Drawing.Size(346, 20);
             this.dateEdit1.TabIndex = 13;
             // 
             // txtSDT
@@ -245,25 +245,25 @@
             this.txtSDT.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(99, 42);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(175, 23);
+            this.txtSDT.Size = new System.Drawing.Size(174, 23);
             this.txtSDT.TabIndex = 16;
             // 
             // txtMaHD
             // 
             this.txtMaHD.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtMaHD.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaHD.Location = new System.Drawing.Point(707, 86);
+            this.txtMaHD.Location = new System.Drawing.Point(706, 86);
             this.txtMaHD.Name = "txtMaHD";
-            this.txtMaHD.Size = new System.Drawing.Size(345, 23);
+            this.txtMaHD.Size = new System.Drawing.Size(346, 23);
             this.txtMaHD.TabIndex = 19;
             // 
             // txtTT
             // 
             this.txtTT.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtTT.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTT.Location = new System.Drawing.Point(707, 131);
+            this.txtTT.Location = new System.Drawing.Point(706, 131);
             this.txtTT.Name = "txtTT";
-            this.txtTT.Size = new System.Drawing.Size(345, 23);
+            this.txtTT.Size = new System.Drawing.Size(346, 23);
             this.txtTT.TabIndex = 20;
             // 
             // cbo_TKH
@@ -273,7 +273,7 @@
             this.cbo_TKH.FormattingEnabled = true;
             this.cbo_TKH.Location = new System.Drawing.Point(99, 3);
             this.cbo_TKH.Name = "cbo_TKH";
-            this.cbo_TKH.Size = new System.Drawing.Size(175, 24);
+            this.cbo_TKH.Size = new System.Drawing.Size(174, 24);
             this.cbo_TKH.TabIndex = 21;
             this.cbo_TKH.TextChanged += new System.EventHandler(this.cbo_TKH_TextChanged);
             this.cbo_TKH.Click += new System.EventHandler(this.cbo_TKH_Click);
@@ -283,9 +283,9 @@
             this.cboTNV.Dock = System.Windows.Forms.DockStyle.Top;
             this.cboTNV.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTNV.FormattingEnabled = true;
-            this.cboTNV.Location = new System.Drawing.Point(707, 3);
+            this.cboTNV.Location = new System.Drawing.Point(706, 3);
             this.cboTNV.Name = "cboTNV";
-            this.cboTNV.Size = new System.Drawing.Size(345, 24);
+            this.cboTNV.Size = new System.Drawing.Size(346, 24);
             this.cboTNV.TabIndex = 22;
             // 
             // txtGhiChu
@@ -295,7 +295,7 @@
             this.txtGhiChu.Location = new System.Drawing.Point(99, 86);
             this.txtGhiChu.Multiline = true;
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(175, 36);
+            this.txtGhiChu.Size = new System.Drawing.Size(174, 36);
             this.txtGhiChu.TabIndex = 18;
             // 
             // labelControl4
@@ -312,7 +312,7 @@
             // simpleButton9
             // 
             this.simpleButton9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.simpleButton9.Location = new System.Drawing.Point(280, 3);
+            this.simpleButton9.Location = new System.Drawing.Point(279, 3);
             this.simpleButton9.Name = "simpleButton9";
             this.simpleButton9.Size = new System.Drawing.Size(32, 23);
             this.simpleButton9.TabIndex = 23;
@@ -357,7 +357,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.37902F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.62098F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
             this.tableLayoutPanel3.Controls.Add(this.simpleButton3, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.simpleButton2, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.simpleButton1, 0, 0);
@@ -373,9 +373,9 @@
             // 
             this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(329, 3);
+            this.simpleButton3.Location = new System.Drawing.Point(328, 3);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(190, 38);
+            this.simpleButton3.Size = new System.Drawing.Size(191, 38);
             this.simpleButton3.TabIndex = 2;
             this.simpleButton3.Text = "Sửa Hóa Đơn";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -384,7 +384,7 @@
             // 
             this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(164, 3);
+            this.simpleButton2.Location = new System.Drawing.Point(163, 3);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(159, 38);
             this.simpleButton2.TabIndex = 1;
@@ -397,7 +397,7 @@
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(3, 3);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(155, 38);
+            this.simpleButton1.Size = new System.Drawing.Size(154, 38);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "Thêm Hóa Đơn";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -407,7 +407,7 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.37902F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.62098F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 195F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 196F));
             this.tableLayoutPanel4.Controls.Add(this.simpleButton4, 2, 0);
             this.tableLayoutPanel4.Controls.Add(this.simpleButton5, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.simpleButton6, 0, 0);
@@ -424,9 +424,9 @@
             // 
             this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(330, 3);
+            this.simpleButton4.Location = new System.Drawing.Point(329, 3);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(190, 38);
+            this.simpleButton4.Size = new System.Drawing.Size(191, 38);
             this.simpleButton4.TabIndex = 2;
             this.simpleButton4.Text = "Sửa Sản Phẩm";
             this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
@@ -437,7 +437,7 @@
             this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
             this.simpleButton5.Location = new System.Drawing.Point(164, 3);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(160, 38);
+            this.simpleButton5.Size = new System.Drawing.Size(159, 38);
             this.simpleButton5.TabIndex = 1;
             this.simpleButton5.Text = "Xóa Sản Phẩm";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
@@ -460,7 +460,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.57458F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 70F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
-            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 161F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 162F));
             this.tableLayoutPanel5.Controls.Add(this.cboTSP, 0, 1);
             this.tableLayoutPanel5.Controls.Add(this.labelControl8, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.labelControl11, 4, 0);
@@ -486,7 +486,7 @@
             this.cboTSP.FormattingEnabled = true;
             this.cboTSP.Location = new System.Drawing.Point(3, 43);
             this.cboTSP.Name = "cboTSP";
-            this.cboTSP.Size = new System.Drawing.Size(135, 24);
+            this.cboTSP.Size = new System.Drawing.Size(134, 24);
             this.cboTSP.TabIndex = 22;
             this.cboTSP.SelectedIndexChanged += new System.EventHandler(this.cboTSP_SelectedIndexChanged);
             this.cboTSP.Click += new System.EventHandler(this.cboTSP_Click);
@@ -505,7 +505,7 @@
             // 
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(364, 3);
+            this.labelControl11.Location = new System.Drawing.Point(363, 3);
             this.labelControl11.Name = "labelControl11";
             this.labelControl11.Size = new System.Drawing.Size(65, 16);
             this.labelControl11.TabIndex = 24;
@@ -515,18 +515,18 @@
             // 
             this.txtThanhTien.Dock = System.Windows.Forms.DockStyle.Top;
             this.txtThanhTien.Enabled = false;
-            this.txtThanhTien.Location = new System.Drawing.Point(364, 43);
+            this.txtThanhTien.Location = new System.Drawing.Point(363, 43);
             this.txtThanhTien.Name = "txtThanhTien";
             this.txtThanhTien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtThanhTien.Properties.Appearance.Options.UseFont = true;
-            this.txtThanhTien.Size = new System.Drawing.Size(156, 22);
+            this.txtThanhTien.Size = new System.Drawing.Size(157, 22);
             this.txtThanhTien.TabIndex = 25;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(242, 3);
+            this.labelControl3.Location = new System.Drawing.Point(241, 3);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(43, 16);
             this.labelControl3.TabIndex = 23;
@@ -536,7 +536,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(172, 3);
+            this.labelControl9.Location = new System.Drawing.Point(171, 3);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(54, 16);
             this.labelControl9.TabIndex = 6;
@@ -546,7 +546,7 @@
             // 
             this.num_SL.Dock = System.Windows.Forms.DockStyle.Top;
             this.num_SL.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.num_SL.Location = new System.Drawing.Point(172, 43);
+            this.num_SL.Location = new System.Drawing.Point(171, 43);
             this.num_SL.Name = "num_SL";
             this.num_SL.Size = new System.Drawing.Size(64, 23);
             this.num_SL.TabIndex = 7;
@@ -560,7 +560,7 @@
             // btnThemSP
             // 
             this.btnThemSP.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnThemSP.Location = new System.Drawing.Point(144, 43);
+            this.btnThemSP.Location = new System.Drawing.Point(143, 43);
             this.btnThemSP.Name = "btnThemSP";
             this.btnThemSP.Size = new System.Drawing.Size(22, 23);
             this.btnThemSP.TabIndex = 26;
@@ -570,7 +570,7 @@
             // txtGiaBan
             // 
             this.txtGiaBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtGiaBan.Location = new System.Drawing.Point(242, 43);
+            this.txtGiaBan.Location = new System.Drawing.Point(241, 43);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGiaBan.Properties.Appearance.Options.UseFont = true;
@@ -672,7 +672,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.08511F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 63F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143F));
-            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
             this.tableLayoutPanel6.Controls.Add(this.dateNgayKT, 3, 0);
             this.tableLayoutPanel6.Controls.Add(this.labelControl12, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.dateNgayBD, 1, 0);
@@ -692,7 +692,7 @@
             // 
             this.dateNgayKT.Dock = System.Windows.Forms.DockStyle.Top;
             this.dateNgayKT.EditValue = null;
-            this.dateNgayKT.Location = new System.Drawing.Point(231, 3);
+            this.dateNgayKT.Location = new System.Drawing.Point(230, 3);
             this.dateNgayKT.Name = "dateNgayKT";
             this.dateNgayKT.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayKT.Properties.Appearance.Options.UseFont = true;
@@ -726,7 +726,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.dateNgayBD.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateNgayBD.Size = new System.Drawing.Size(107, 22);
+            this.dateNgayBD.Size = new System.Drawing.Size(106, 22);
             this.dateNgayBD.TabIndex = 1;
             // 
             // labelControl13
@@ -734,7 +734,7 @@
             this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl13.Appearance.Options.UseFont = true;
             this.labelControl13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.labelControl13.Location = new System.Drawing.Point(168, 3);
+            this.labelControl13.Location = new System.Drawing.Point(167, 3);
             this.labelControl13.Name = "labelControl13";
             this.labelControl13.Size = new System.Drawing.Size(60, 16);
             this.labelControl13.TabIndex = 2;
@@ -745,10 +745,10 @@
             this.btnSearch.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Appearance.Options.UseFont = true;
             this.btnSearch.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSearch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
-            this.btnSearch.Location = new System.Drawing.Point(374, 3);
+            this.btnSearch.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.ImageOptions.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(373, 3);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(145, 31);
+            this.btnSearch.Size = new System.Drawing.Size(146, 31);
             this.btnSearch.TabIndex = 4;
             this.btnSearch.Text = "Tìm Kiếm";
             this.btnSearch.Click += new System.EventHandler(this.simpleButton7_Click);
@@ -759,9 +759,9 @@
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
-            this.simpleButton8.Location = new System.Drawing.Point(374, 40);
+            this.simpleButton8.Location = new System.Drawing.Point(373, 40);
             this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(145, 38);
+            this.simpleButton8.Size = new System.Drawing.Size(146, 38);
             this.simpleButton8.TabIndex = 5;
             this.simpleButton8.Text = "Xuất Hóa Đơn";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);

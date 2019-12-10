@@ -149,5 +149,10 @@ namespace LTWNCFashion
                 }
             }
         }
+
+        private void txtMaNV_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

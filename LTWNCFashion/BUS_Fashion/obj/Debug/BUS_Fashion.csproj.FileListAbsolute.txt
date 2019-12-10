@@ -42,3 +42,14 @@ G:\DownLoad\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.pdb
 G:\DownLoad\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll.config
 G:\DownLoad\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.pdb
 G:\DownLoad\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csproj.CopyComplete
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.dll
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\BUS_Fashion.pdb
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.dll
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.pdb
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DAL_Fashion.dll.config
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\bin\Debug\DTO_Fashion.pdb
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csprojAssemblyReference.cache
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.csproj.CopyComplete
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.dll
+E:\winform1\LapTrinhWinNangCao\LTWNCFashion\BUS_Fashion\obj\Debug\BUS_Fashion.pdb
