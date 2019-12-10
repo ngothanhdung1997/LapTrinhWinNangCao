@@ -170,10 +170,10 @@ namespace LTWNCFashion
 
         private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmHangHoa));
+            Form frm = ktraform(typeof(FromHangHoa));
             if (frm == null)
             {
-                FrmHangHoa f = new FrmHangHoa();
+                FromHangHoa f = new FromHangHoa();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -185,10 +185,10 @@ namespace LTWNCFashion
 
         private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(QL_HoaDon));
+            Form frm = ktraform(typeof(FrmHoaDon));
             if (frm == null)
             {
-                QL_HoaDon f = new QL_HoaDon();
+                FrmHoaDon f = new FrmHoaDon();
                 f.MdiParent = this;
                 f.Show();
             }

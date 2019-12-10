@@ -52,12 +52,12 @@ namespace DAL_Fashion
             //});
             //return kq;
         }
-        public DataTable getCTHDtheoma(string pMaHD)
+        public DataTable getCTHDtheoma(int pMaHD)
         {
             //return db.CT_HDs.Where(t => t.MaHD == int.Parse(pMaHD)).ToList<CT_HD>();
             var CTHD = (from cthd in db.CT_HDs
                         join hh in db.HangHoas on cthd.MaHang equals hh.MaHang
-                        where cthd.MaHD == int.Parse(pMaHD)
+                        where cthd.MaHD == pMaHD
                         select new
                         {
                             MaHang = cthd.MaHang,
@@ -195,6 +195,26 @@ namespace DAL_Fashion
         public List<HoaDon> searchHD(string pNgayBD, string pNgayKT)
         {
             return db.HoaDons.Where(t => t.NgayLapHD >= DateTime.Parse(pNgayBD) && t.NgayLapHD <= DateTime.Parse(pNgayKT)).ToList<HoaDon>();
+        }
+
+        // lay sdt theo ma 
+        public string laysdt(string pmakh)
+        {
+            string a = "";
+            var KH = from kh in db.KhachHangs
+                     where kh.MaKH.ToString() == pmakh
+                     select new
+                     {
+                         kh.sdt
+                     };
+            if (KH.Count() > 0)
+            {
+                foreach (var c in KH)
+                {
+                    a = c.sdt;
+                }
+            }
+            return a;
         }
     }
 }

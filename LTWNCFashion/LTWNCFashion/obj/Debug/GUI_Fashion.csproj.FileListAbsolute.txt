@@ -426,4 +426,5 @@ G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.exe.licenses
 G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\GUI_Fashion.csproj.CopyComplete
 G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.exe
 G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.pdb
-G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.Form1.resources
+G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FrmHoaDon.resources
+G:\DownLoad\LTWNCFashion\LTWNCFashion\obj\Debug\LTWNCFashion.FromHangHoa.resources

@@ -15,7 +15,7 @@ namespace BUS_Fashion
         {
             return dalhd.getHD();
         }
-        public DataTable getCTHD(string pMahd)
+        public DataTable getCTHD(int pMahd)
         {
             return dalhd.getCTHDtheoma(pMahd);
         }

@@ -27,9 +27,25 @@ namespace DAL_Fashion
             hh.SoluongTon = hh.SoluongTon + soluong;
             db.SubmitChanges();
         }
-        public List<HangHoa> getGiaBan(string pMaH)
+
+        // lay gia ban theo ma sp
+        public string laygiaban(string pmasp)
         {
-            return db.HangHoas.Where(t => t.MaHang == int.Parse(pMaH)).ToList<HangHoa>();
+            string a = "";
+            var HH = from sp in db.HangHoas
+                     where sp.MaHang.ToString() == pmasp
+                     select new
+                     {
+                         sp.DonGiaBan
+                     };
+            if (HH.Count() > 0)
+            {
+                foreach (var c in HH)
+                {
+                    a = c.DonGiaBan.ToString();
+                }
+            }
+            return a;
         }
         public List<TheLoai> getTheLoai()
         {

@@ -17,6 +17,7 @@ namespace LTWNCFashion
     public partial class QL_HoaDon : DevExpress.XtraEditors.XtraForm
     {
         BUS_HoaDon bshd = new BUS_HoaDon();
+        DAL_HoaDon hd = new DAL_HoaDon();
         DAL_HH hh = new DAL_HH();
         public QL_HoaDon()
         {
@@ -57,7 +58,8 @@ namespace LTWNCFashion
             dateEdit1.EditValue = gdv_HD.Rows[numrow].Cells["NgayLapHD"].Value.ToString();
             txtSDT.Text = gdv_HD.Rows[numrow].Cells["SDT"].Value.ToString();
             txtGhiChu.Text = gdv_HD.Rows[numrow].Cells["GhiChu"].Value.ToString();
-            gdvCTHD.DataSource = bshd.getCTHD(txtMaHD.Text);
+            int mscthd = int.Parse(txtMaHD.Text);
+            gdvCTHD.DataSource = bshd.getCTHD(mscthd);
             txtTT.Text = tongtien().ToString();
         }
 
@@ -119,8 +121,7 @@ namespace LTWNCFashion
         {
             try
             {
-                cboGB.DataSource = hh.getGiaBan(cboTSP.SelectedValue.ToString());
-                cboGB.DisplayMember = "DonGiaBan";
+                txtGiaBan.Text = hh.laygiaban(cboTSP.SelectedValue.ToString());
             }
             catch
             { return; }
@@ -147,11 +148,11 @@ namespace LTWNCFashion
                 }
                 if (bien)
                 {
-                    int tt = (int.Parse(num_SL.Value.ToString()) * int.Parse(cboGB.Text));
-                    DTO_CTHD cthd = new DTO_CTHD(int.Parse(txtMaHD.Text), int.Parse(cboTSP.SelectedValue.ToString()), int.Parse(num_SL.Value.ToString()), int.Parse(cboGB.Text), tt);
+                    int tt = (int.Parse(num_SL.Value.ToString()) * int.Parse(txtGiaBan.Text));
+                    DTO_CTHD cthd = new DTO_CTHD(int.Parse(txtMaHD.Text), int.Parse(cboTSP.SelectedValue.ToString()), int.Parse(num_SL.Value.ToString()), int.Parse(txtGiaBan.Text), tt);
                     bshd.InsertCT_HD(cthd);
                     XtraMessageBox.Show("Thêm thành công.");
-                    gdvCTHD.DataSource = bshd.getCTHD(txtMaHD.Text);
+                    gdvCTHD.DataSource = bshd.getCTHD(int.Parse(txtMaHD.Text));
                     int sl = int.Parse(num_SL.Value.ToString());
                     string mah = cboTSP.SelectedValue.ToString();
                     hh.Updatesoluonggiam(int.Parse(mah), sl);
@@ -165,14 +166,14 @@ namespace LTWNCFashion
             {
                 XtraMessageBox.Show("Thêm thất bại.");
             }
-            int dong = gdvCTHD.Rows.Count;
-            int tong = 0;
-            for (int i = 0; i < dong-1; i++)
-            {
-                string kq = gdvCTHD.Rows[i].Cells["TT"].Value.ToString();
-                tong += int.Parse(kq);
-            }
-            txtTT.Text = tong.ToString();
+            //int dong = gdvCTHD.Rows.Count;
+            //int tong = 0;
+            //for (int i = 0; i < dong-1; i++)
+            //{
+            //    string kq = gdvCTHD.Rows[i].Cells["TT"].Value.ToString();
+            //    tong += int.Parse(kq);
+            //}
+            //txtTT.Text = tong.ToString();
 
         }
         private void simpleButton4_Click(object sender, EventArgs e)
@@ -180,10 +181,10 @@ namespace LTWNCFashion
             try
             {
                 int tt = (int.Parse(txtThanhTien.Text));
-                DTO_CTHD cthd = new DTO_CTHD(int.Parse(txtMaHD.Text), int.Parse(cboTSP.SelectedValue.ToString()), int.Parse(num_SL.Value.ToString()), int.Parse(cboGB.Text), tt);
+                DTO_CTHD cthd = new DTO_CTHD(int.Parse(txtMaHD.Text), int.Parse(cboTSP.SelectedValue.ToString()), int.Parse(num_SL.Value.ToString()), int.Parse(txtGiaBan.Text), tt);
                 bshd.UpdateCTHD(cthd);
                 XtraMessageBox.Show("Sửa thành công.");
-                gdvCTHD.DataSource = bshd.getCTHD(txtMaHD.Text);
+                gdvCTHD.DataSource = bshd.getCTHD(int.Parse(txtMaHD.Text));
             }
             catch
             {
@@ -194,7 +195,7 @@ namespace LTWNCFashion
         {
             try
             {
-                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                string tt = (num_SL.Value * int.Parse(txtGiaBan.Text)).ToString();
                 txtThanhTien.Text = tt;
             }
             catch
@@ -208,7 +209,7 @@ namespace LTWNCFashion
         {
             try
             {
-                string tt = (num_SL.Value * int.Parse(cboGB.Text)).ToString();
+                string tt = (num_SL.Value * int.Parse(txtGiaBan.Text)).ToString();
                 txtThanhTien.Text = tt;
             }
             catch
@@ -223,7 +224,7 @@ namespace LTWNCFashion
                 int numrow;
                 numrow = e.RowIndex;
                 num_SL.Value = int.Parse(gdvCTHD.Rows[numrow].Cells["SL"].Value.ToString());
-                cboGB.Text = gdvCTHD.Rows[numrow].Cells["GB"].Value.ToString();
+                txtGiaBan.Text = gdvCTHD.Rows[numrow].Cells["GB"].Value.ToString();
                 txtThanhTien.Text = gdvCTHD.Rows[numrow].Cells["TT"].Value.ToString();
             }
             catch
@@ -235,7 +236,7 @@ namespace LTWNCFashion
         {
             try
             {
-                string masp = gdvCTHD.CurrentRow.Cells["MaSP"].Value.ToString();
+                string masp = gdvCTHD.CurrentRow.Cells[0].Value.ToString();
                 string sl = gdvCTHD.CurrentRow.Cells["SL"].Value.ToString();
                 DTO_CTHD cthd = new DTO_CTHD(int.Parse(txtMaHD.Text), int.Parse(masp));
                 bool kq = bshd.DeleteCTHD(cthd);
@@ -247,7 +248,7 @@ namespace LTWNCFashion
                 {
                     XtraMessageBox.Show("Xóa thất bại.");
                 }
-                gdvCTHD.DataSource = bshd.getCTHD(txtMaHD.Text);
+                gdvCTHD.DataSource = bshd.getCTHD(int.Parse(txtMaHD.Text));
                 hh.Updatesoluongtang(int.Parse(masp),int.Parse(sl));
             }
             catch
@@ -512,6 +513,16 @@ namespace LTWNCFashion
             cbo_TKH.DataSource = bshd.getListKhachHang();
             cbo_TKH.DisplayMember = "TenKH";
             cbo_TKH.ValueMember = "MaKH";
+        }
+
+        private void gdvCTHD_DataSourceChanged(object sender, EventArgs e)
+        {
+            txtTT.Text = tongtien().ToString();
+        }
+
+        private void cbo_TKH_TextChanged(object sender, EventArgs e)
+        {
+           txtSDT.Text = hd.laysdt(cbo_TKH.SelectedValue.ToString());
         }
     }
 }
