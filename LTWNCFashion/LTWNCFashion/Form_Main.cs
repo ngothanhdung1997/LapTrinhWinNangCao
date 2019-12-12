@@ -32,10 +32,10 @@ namespace LTWNCFashion
         private void btn_DSKH_ItemClick(object sender, ItemClickEventArgs e)
         {
 
-            Form frm = ktraform(typeof(FrmKhachHang));
+            Form frm = ktraform(typeof(Frm_KhachHang));
             if (frm == null)
             {
-                FrmKhachHang f = new FrmKhachHang();
+                Frm_KhachHang f = new Frm_KhachHang();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -109,10 +109,10 @@ namespace LTWNCFashion
 
         private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmHangHoa));
+            Form frm = ktraform(typeof(FromHangHoa));
             if (frm == null)
             {
-                FrmHangHoa f = new FrmHangHoa();
+                FromHangHoa f = new FromHangHoa();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -140,10 +140,10 @@ namespace LTWNCFashion
 
         private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(QL_HoaDon));
+            Form frm = ktraform(typeof(FrmHoaDon));
             if (frm == null)
             {
-                QL_HoaDon f = new QL_HoaDon();
+                FrmHoaDon f = new FrmHoaDon();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -155,10 +155,10 @@ namespace LTWNCFashion
 
         private void barButtonItem1_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmNhanVien));
+            Form frm = ktraform(typeof(FromNhanVien));
             if (frm == null)
             {
-                FrmNhanVien f = new FrmNhanVien();
+                FromNhanVien f = new FromNhanVien();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -200,10 +200,10 @@ namespace LTWNCFashion
 
         private void barButtonItem6_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmNhaCC));
+            Form frm = ktraform(typeof(Frm_NhaCC));
             if (frm == null)
             {
-                FrmNhaCC f = new FrmNhaCC();
+                Frm_NhaCC f = new Frm_NhaCC();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -215,10 +215,10 @@ namespace LTWNCFashion
 
         private void barButtonItem7_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmTheLoai));
+            Form frm = ktraform(typeof(Frm_TheLoai));
             if (frm == null)
             {
-                FrmTheLoai f = new FrmTheLoai();
+                Frm_TheLoai f = new Frm_TheLoai();
                 f.MdiParent = this;
                 f.Show();
             }
@@ -230,10 +230,10 @@ namespace LTWNCFashion
 
         private void barButtonItem8_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = ktraform(typeof(FrmThuongHieu));
+            Form frm = ktraform(typeof(Frm_ThuongHieu));
             if (frm == null)
             {
-                FrmThuongHieu f = new FrmThuongHieu();
+                Frm_ThuongHieu f = new Frm_ThuongHieu();
                 f.MdiParent = this;
                 f.Show();
             }

@@ -91,5 +91,10 @@ namespace LTWNCFashion
             txtMath.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
             txtTenth.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
         }
+
+        private void Frm_ThuongHieu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -69,6 +69,9 @@ namespace DAL_Fashion
                 insert.DVT = a.DVT;
                 insert.MoTa = a.MoTa;
                 insert.HinhAnh = file_binary;
+                insert.Size = a.Size;
+                insert.MauSac = a.MauSac;
+                insert.FileNam = a.Filename;
                 db.HangHoas.InsertOnSubmit(insert);
                 db.SubmitChanges();
                 return true;
@@ -94,6 +97,9 @@ namespace DAL_Fashion
                 update.DVT = a.DVT;
                 update.MoTa = a.MoTa;
                 update.HinhAnh = file_binary;
+                update.Size = a.Size;
+                update.MauSac = a.MauSac;
+                update.FileNam = a.Filename;
                 db.SubmitChanges();
                 return true;
             }

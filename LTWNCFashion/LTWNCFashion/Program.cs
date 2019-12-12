@@ -19,7 +19,7 @@ namespace LTWNCFashion
             //Application.Run(new Form_Main());
             //Application.Run(new FrmNhaCC());
             //Application.Run(new Form_Main());
-            Application.Run(new FrmKhachHang());
+            Application.Run(new Form_Main());
         }
         //public static Main main = null;
     }

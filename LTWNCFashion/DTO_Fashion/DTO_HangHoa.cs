@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +18,9 @@ namespace DTO_Fashion
         private string _DVT;
         private string _MoTa;
         private Byte[] _img;
-
+        private string _Size;
+        private string _MauSac;
+        private string _filename;
         public int MaHang
         {
             get { return _MaH; }
@@ -62,8 +64,12 @@ namespace DTO_Fashion
 
         public int DonGiaNhap { get => _DonGiaNhap; set => _DonGiaNhap = value; }
         public int DonGiaBan { get => _DonGiaBan; set => _DonGiaBan = value; }
+        public string Size { get => _Size; set => _Size = value; }
+        public string MauSac { get => _MauSac; set => _MauSac = value; }
+        public string Filename { get => _filename; set => _filename = value; }
+
         //insert
-        public DTO_HangHoa(int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img)
+        public DTO_HangHoa(int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img, string size, string mausac, string filename)
         {
             this.MaThuongHieu = math;
             this.MaLoai = mal;
@@ -74,9 +80,12 @@ namespace DTO_Fashion
             this.DVT = dvt;
             this.MoTa = mota;
             this.img = img;
+            this.Size = size;
+            this.MauSac = mausac;
+            this.Filename = filename;
         }
         //update
-        public DTO_HangHoa(int mah, int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img)
+        public DTO_HangHoa(int mah, int math, int mal, string tenh, int dongianhap, int dongiaban, int soluong, string dvt, string mota, byte[] img, string size, string mausac, string filename)
         {
             this.MaHang = mah;
             this.MaThuongHieu = math;
@@ -88,6 +97,9 @@ namespace DTO_Fashion
             this.DVT = dvt;
             this.MoTa = mota;
             this.img = img;
+            this.Size = size;
+            this.MauSac = mausac;
+            this.Filename = filename;
         }
         //delete
         public DTO_HangHoa(int mah)

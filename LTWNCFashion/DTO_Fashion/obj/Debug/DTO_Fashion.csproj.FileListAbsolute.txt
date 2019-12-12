@@ -16,3 +16,8 @@ G:\DownLoad\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
 G:\DownLoad\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
 G:\DownLoad\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
 G:\DownLoad\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb
+E:\LTWNC\Git\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.dll
+E:\LTWNC\Git\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\bin\Debug\DTO_Fashion.pdb
+E:\LTWNC\Git\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.csprojAssemblyReference.cache
+E:\LTWNC\Git\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.dll
+E:\LTWNC\Git\LapTrinhWinNangCao\LTWNCFashion\DTO_Fashion\obj\Debug\DTO_Fashion.pdb

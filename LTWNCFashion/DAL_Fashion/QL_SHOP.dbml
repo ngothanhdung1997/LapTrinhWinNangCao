@@ -7,8 +7,8 @@
       <Column Name="SLBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="GiaBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ThanhTien" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="HangHoa_CT_HD" Member="HangHoa" ThisKey="MaHang" OtherKey="MaHang" Type="HangHoa" IsForeignKey="true" />
       <Association Name="HoaDon_CT_HD" Member="HoaDon" ThisKey="MaHD" OtherKey="MaHD" Type="HoaDon" IsForeignKey="true" />
+      <Association Name="HangHoa_CT_HD" Member="HangHoa" ThisKey="MaHang" OtherKey="MaHang" Type="HangHoa" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.ThuongHieu" Member="ThuongHieus">
@@ -16,23 +16,6 @@
       <Column Name="MaThuongHieu" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="TenTH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Association Name="ThuongHieu_HangHoa" Member="HangHoas" ThisKey="MaThuongHieu" OtherKey="MaThuongHieu" Type="HangHoa" />
-    </Type>
-  </Table>
-  <Table Name="dbo.HangHoa" Member="HangHoas">
-    <Type Name="HangHoa">
-      <Column Name="MaHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="MaThuongHieu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="MaLoai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="TenHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="DonGiaNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DonGiaBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SoluongTon" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="DVT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="MoTa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
-      <Association Name="HangHoa_CT_HD" Member="CT_HDs" ThisKey="MaHang" OtherKey="MaHang" Type="CT_HD" />
-      <Association Name="ThuongHieu_HangHoa" Member="ThuongHieu" ThisKey="MaThuongHieu" OtherKey="MaThuongHieu" Type="ThuongHieu" IsForeignKey="true" />
-      <Association Name="TheLoai_HangHoa" Member="TheLoai" ThisKey="MaLoai" OtherKey="MaLoai" Type="TheLoai" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.HoaDon" Member="HoaDons">
@@ -121,6 +104,26 @@
       <Column Name="Ngayvaolam" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Column Name="ImageNV" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="NhanVien_HoaDon" Member="HoaDons" ThisKey="MaNV" OtherKey="MaNV" Type="HoaDon" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HangHoa" Member="HangHoas">
+    <Type Name="HangHoa">
+      <Column Name="MaHang" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaThuongHieu" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MaLoai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TenHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGiaNhap" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGiaBan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoluongTon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DVT" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="HinhAnh" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Size" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="MauSac" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="FileNam" Type="System.String" DbType="NChar(100)" CanBeNull="true" />
+      <Association Name="HangHoa_CT_HD" Member="CT_HDs" ThisKey="MaHang" OtherKey="MaHang" Type="CT_HD" />
+      <Association Name="TheLoai_HangHoa" Member="TheLoai" ThisKey="MaLoai" OtherKey="MaLoai" Type="TheLoai" IsForeignKey="true" />
+      <Association Name="ThuongHieu_HangHoa" Member="ThuongHieu" ThisKey="MaThuongHieu" OtherKey="MaThuongHieu" Type="ThuongHieu" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>

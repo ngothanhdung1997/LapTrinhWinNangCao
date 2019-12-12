@@ -76,6 +76,7 @@ namespace LTWNCFashion
                 if (open.ShowDialog() == DialogResult.OK)
                 {
                     p.Image = Image.FromFile(open.FileName);
+                    txtFileImage.Text = open.SafeFileName;
                 }
             }
         }
@@ -107,6 +108,8 @@ namespace LTWNCFashion
             txtSLT.Text = gdv_HH.Rows[numrow].Cells["SL"].Value.ToString();
             cboDVT.Text = gdv_HH.Rows[numrow].Cells["DVT"].Value.ToString();
             txtMoTa.Text = gdv_HH.Rows[numrow].Cells["mota"].Value.ToString();
+            txtMauSac.Text = gdv_HH.Rows[numrow].Cells["MauSac"].Value.ToString();
+            cbo_Size.Text = gdv_HH.Rows[numrow].Cells["Size"].Value.ToString();
             string ma = gdv_HH.Rows[numrow].Cells["MaH"].Value.ToString();
             int s = int.Parse(ma);
             CellClick_MaSP(s);
@@ -118,7 +121,7 @@ namespace LTWNCFashion
             {
                 byte[] b = ImageToByteArray(pct_HinhAnh.Image);
                 DTO_HangHoa hh = new DTO_HangHoa(int.Parse(cboTH.SelectedValue.ToString()), int.Parse(cboLoai.SelectedValue.ToString()), txtTenHang.Text,
-                    int.Parse(txtGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, b);
+                    int.Parse(txtGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, b,cbo_Size.Text,txtMauSac.Text, txtFileImage.Text);
                 bs_hh.InsertHangHoa(hh);
                 XtraMessageBox.Show("Thêm thành công.");
                 LoadData();
@@ -164,7 +167,7 @@ namespace LTWNCFashion
         {
             byte[] b = ImageToByteArray(pct_HinhAnh.Image);
             DTO_HangHoa hh = new DTO_HangHoa(int.Parse(txtMaHang.Text), int.Parse(cboTH.Text), int.Parse(cboLoai.Text),
-                txtTenHang.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, b);
+                txtTenHang.Text, int.Parse(txtGiaNhap.Text), int.Parse(txtDonGiaBan.Text), int.Parse(txtSLT.Text), cboDVT.Text, txtMoTa.Text, b,cbo_Size.Text, txtMauSac.Text, txtFileImage.Text);
             bs_hh.UpdateHangHoa(hh);
             XtraMessageBox.Show("Sửa thành công.");
             LoadData();
@@ -177,5 +180,7 @@ namespace LTWNCFashion
                 this.Close();
             }
         }
+
+       
     }
 }

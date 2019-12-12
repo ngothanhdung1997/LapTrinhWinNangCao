@@ -144,10 +144,10 @@ namespace LTWNCFashion
         }
         private void simpleButton9_Click(object sender, EventArgs e)
         {
-            Form frm = ktraform(typeof(FrmKhachHang));
+            Form frm = ktraform(typeof(Frm_KhachHang));
             if (frm == null)
             {
-                FrmKhachHang f = new FrmKhachHang();
+                Frm_KhachHang f = new Frm_KhachHang();
                 f.Show();
             }
             else
@@ -276,10 +276,10 @@ namespace LTWNCFashion
 
         private void btnThemSP_Click(object sender, EventArgs e)
         {
-            Form frm = ktraform(typeof(FrmHangHoa));
+            Form frm = ktraform(typeof(FromHangHoa));
             if (frm == null)
             {
-                FrmHangHoa f = new FrmHangHoa();
+                FromHangHoa f = new FromHangHoa();
                 f.Show();
             }
             else
